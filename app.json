@@ -6,6 +6,7 @@
       "packageName": "com.vaultx.vault_x",
       "playStoreUrl": "https://play.google.com/store/apps/details?id=com.vaultx.vault_x",
       "iconUrl": "/images/vaultx.png",
+      "status": "production",
       "description": "The ultimate link vault. Save, organize, and secure your digital bookmarks effortlessly."
     },
     {
@@ -13,8 +14,27 @@
       "appName": "Trust Tracker",
       "packageName": "com.trusttracker.trust_tracker_flutter",
       "playStoreUrl": "https://play.google.com/store/apps/details?id=com.trusttracker.trust_tracker_flutter",
-      "iconUrl": "/images/trust-tracker.png",
+      "iconUrl": "/images/vaultx.png",
+      "status": "production",
       "description": "A secure personal finance app to effortlessly track your subscriptions and manage daily expenses"
+    },
+    {
+      "id": "com.snapdocs.app",
+      "appName": "SnapDocs",
+      "packageName": "com.snapdocs.app",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.snapdocs.app",
+      "iconUrl": "/images/snapdocs.png",
+      "status": "coming_soon",
+      "description": "Offline secure document storage application."
+    },
+    {
+      "id": "com.noctune.music",
+      "appName": "Noctune",
+      "packageName": "com.noctune.music",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.noctune.music",
+      "iconUrl": "/images/noctune.png",
+      "status": "coming_soon",
+      "description": "Modern music player for music lovers who want to listen offline."
     }
   ]
 }
