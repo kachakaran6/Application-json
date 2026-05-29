@@ -1,0 +1,20 @@
+{
+  "apps": [
+    {
+      "id": "com.vaultx.vault_x",
+      "appName": "Vault X",
+      "packageName": "com.vaultx.vault_x",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.vaultx.vault_x",
+      "iconUrl": "/images/vaultx.png",
+      "description": "Vault X application."
+    },
+    {
+      "id": "com.trusttracker.trust_tracker_flutter",
+      "appName": "Trust Tracker",
+      "packageName": "com.trusttracker.trust_tracker_flutter",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.trusttracker.trust_tracker_flutter",
+      "iconUrl": "https://example.com/icons/trust_tracker.png",
+      "description": "Trust Tracker application."
+    }
+  ]
+}
