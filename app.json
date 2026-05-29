@@ -14,7 +14,7 @@
       "appName": "Trust Tracker",
       "packageName": "com.trusttracker.trust_tracker_flutter",
       "playStoreUrl": "https://play.google.com/store/apps/details?id=com.trusttracker.trust_tracker_flutter",
-      "iconUrl": "/images/vaultx.png",
+      "iconUrl": "/images/trust-tracker.png",
       "status": "production",
       "description": "A secure personal finance app to effortlessly track your subscriptions and manage daily expenses"
     },
