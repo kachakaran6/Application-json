@@ -35,6 +35,15 @@
       "iconUrl": "/images/noctune.png",
       "status": "coming_soon",
       "description": "Modern music player for music lovers who want to listen offline."
+    },
+    {
+      "id": "com.divinegeeta.app",
+      "appName": "Divine Geeta: Daily Wisdom",
+      "packageName": "com.divinegeeta.app",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.divinegeeta.app",
+      "iconUrl": "/images/divine-geeta.png",
+      "status": "coming_soon",
+      "description": "Daily spiritual wisdom and insights for a peaceful life."
     }
   ]
 }
