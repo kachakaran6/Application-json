@@ -24,7 +24,7 @@
       "packageName": "com.snapdocs.app",
       "playStoreUrl": "https://play.google.com/store/apps/details?id=com.snapdocs.app",
       "iconUrl": "/images/snapdocs.png",
-      "status": "coming_soon",
+      "status": "production",
       "description": "Offline secure document storage application."
     },
     {
