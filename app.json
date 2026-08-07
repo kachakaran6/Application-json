@@ -33,7 +33,7 @@
       "packageName": "com.noctune.music",
       "playStoreUrl": "https://play.google.com/store/apps/details?id=com.noctune.music",
       "iconUrl": "/images/noctune.png",
-      "status": "coming_soon",
+      "status": "production",
       "description": "Modern music player for music lovers who want to listen offline."
     },
     {
