@@ -62,6 +62,15 @@
       "iconUrl": "/images/taskmitra.png",
       "status": "coming_soon",
       "description": "Organize tasks, manage projects, set reminders, and boost productivity with ease."
+    },
+    {
+      "id": "app.habitly",
+      "appName": "Habitly - Habit Tracker",
+      "packageName": "app.habitly",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=app.habitly",
+      "iconUrl": "/images/habitly.png",
+      "status": "coming_soon",
+      "description": "A minimal habit tracker that helps you build lasting habits and unstoppable streaks."
     }
   ]
 }
