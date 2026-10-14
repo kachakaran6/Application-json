@@ -17,7 +17,27 @@
       "playStoreUrl": "https://play.google.com/store/apps/details?id=com.vaultx.vault_x",
       "iconUrl": "/images/vaultx.png",
       "status": "production",
-      "description": "The ultimate link vault. Save, organize, and secure your digital bookmarks effortlessly."
+      "category": "Android utility & Privacy",
+      "tagline": "Secure on-device digital bookmark vault",
+      "description": "The ultimate link vault. Save, organize, and secure your digital bookmarks effortlessly.",
+      "featured": true,
+      "year": "2025",
+      "client": "Samyukt Proprietary",
+      "stack": [
+        "Flutter",
+        "Dart",
+        "SQLite",
+        "AES-256 Encryption"
+      ],
+      "services": [
+        "Mobile app",
+        "Cybersecurity"
+      ],
+      "highlights": [
+        "100% offline local database with hardware-backed encryption",
+        "Fast biometric authentication (Fingerprint / Face ID)",
+        "Instant categorisation, tagging, and encrypted export backups"
+      ]
     },
     {
       "id": "com.trusttracker.trust_tracker_flutter",
@@ -26,7 +46,27 @@
       "playStoreUrl": "https://play.google.com/store/apps/details?id=com.trusttracker.trust_tracker_flutter",
       "iconUrl": "/images/trust-tracker.png",
       "status": "production",
-      "description": "A secure personal finance app to effortlessly track your subscriptions and manage daily expenses"
+      "category": "Android utility & Personal finance",
+      "tagline": "Offline subscription and expense ledger",
+      "description": "A secure personal finance app to effortlessly track your subscriptions and manage daily expenses",
+      "featured": true,
+      "year": "2025",
+      "client": "Samyukt Proprietary",
+      "stack": [
+        "Flutter",
+        "Dart",
+        "Local SQLite",
+        "Riverpod"
+      ],
+      "services": [
+        "Mobile app",
+        "Software development"
+      ],
+      "highlights": [
+        "Automated subscription renewal reminders and cost projections",
+        "Zero-cloud sync guaranteeing total financial privacy",
+        "Interactive analytics and budget breakdown visualisations"
+      ]
     },
     {
       "id": "com.snapdocs.app",
@@ -35,7 +75,27 @@
       "playStoreUrl": "https://play.google.com/store/apps/details?id=com.snapdocs.app",
       "iconUrl": "/images/snapdocs.png",
       "status": "production",
-      "description": "Offline secure document storage application."
+      "category": "Android utility & Document security",
+      "tagline": "Offline document scanner and vault",
+      "description": "Offline secure document storage application.",
+      "featured": false,
+      "year": "2025",
+      "client": "Samyukt Proprietary",
+      "stack": [
+        "Kotlin",
+        "Android SDK",
+        "Room DB",
+        "Biometrics"
+      ],
+      "services": [
+        "Mobile app",
+        "AI and automation"
+      ],
+      "highlights": [
+        "On-device OCR and document text extraction",
+        "Biometrically secured isolated document vaults",
+        "Compliance-friendly local PDF generation"
+      ]
     },
     {
       "id": "com.noctune.music",
@@ -44,7 +104,27 @@
       "playStoreUrl": "https://play.google.com/store/apps/details?id=com.noctune.music",
       "iconUrl": "/images/noctune.png",
       "status": "production",
-      "description": "Modern music player for music lovers who want to listen offline."
+      "category": "Android utility & Audio engine",
+      "tagline": "Modern offline music player",
+      "description": "Modern music player for music lovers who want to listen offline.",
+      "featured": false,
+      "year": "2025",
+      "client": "Samyukt Proprietary",
+      "stack": [
+        "Flutter",
+        "Dart",
+        "ExoPlayer",
+        "Audio Service"
+      ],
+      "services": [
+        "Mobile app",
+        "Software development"
+      ],
+      "highlights": [
+        "Hardware-accelerated audio codec pipeline",
+        "Zero background battery drain and lightweight memory footprint",
+        "Curated tag management and offline playlist synchronization"
+      ]
     },
     {
       "id": "com.divinegeeta.app",
@@ -53,7 +133,27 @@
       "playStoreUrl": "https://play.google.com/store/apps/details?id=com.divinegeeta.app",
       "iconUrl": "/images/divine-geeta.png",
       "status": "production",
-      "description": "Daily spiritual wisdom and insights for a peaceful life."
+      "category": "Android utility & Spiritual wisdom",
+      "tagline": "Daily spiritual wisdom and insights for a peaceful life",
+      "description": "Daily spiritual wisdom and insights for a peaceful life.",
+      "featured": false,
+      "year": "2025",
+      "client": "Samyukt Proprietary",
+      "stack": [
+        "Flutter",
+        "Dart",
+        "Clean Architecture",
+        "Local Storage"
+      ],
+      "services": [
+        "Mobile app",
+        "Software development"
+      ],
+      "highlights": [
+        "Daily curated Bhagavad Gita shlokas with clear English & Hindi translations",
+        "Clean, peaceful typography and distraction-free reader mode",
+        "100% private, on-device bookmarks and reading progress"
+      ]
     },
     {
       "id": "com.gymbuddy.application",
@@ -62,7 +162,27 @@
       "playStoreUrl": "https://play.google.com/store/apps/details?id=com.gymbuddy.application",
       "iconUrl": "/images/gymbuddy.png",
       "status": "coming_soon",
-      "description": "Monitor workouts, body measurements, fitness progress, and achieve your health goals."
+      "category": "Android utility & Fitness tracking",
+      "tagline": "Workout routines & body measurement tracker",
+      "description": "Monitor workouts, body measurements, fitness progress, and achieve your health goals.",
+      "featured": false,
+      "year": "2025",
+      "client": "Samyukt Proprietary",
+      "stack": [
+        "Flutter",
+        "Dart",
+        "SQLite",
+        "Health Metrics"
+      ],
+      "services": [
+        "Mobile app",
+        "Software development"
+      ],
+      "highlights": [
+        "Accurate body circumference and muscle measurement logging",
+        "Visual progress charts and milestone tracking",
+        "Offline-first private fitness logging with zero server telemetry"
+      ]
     },
     {
       "id": "com.taskmitra.application",
@@ -71,7 +191,27 @@
       "playStoreUrl": "https://play.google.com/store/apps/details?id=com.taskmitra.application",
       "iconUrl": "/images/taskmitra.png",
       "status": "coming_soon",
-      "description": "Organize tasks, manage projects, set reminders, and boost productivity with ease."
+      "category": "Android utility & Task productivity",
+      "tagline": "Organize tasks, manage projects, and set reminders",
+      "description": "Organize tasks, manage projects, set reminders, and boost productivity with ease.",
+      "featured": false,
+      "year": "2025",
+      "client": "Samyukt Proprietary",
+      "stack": [
+        "Flutter",
+        "Dart",
+        "Local SQLite",
+        "State Management"
+      ],
+      "services": [
+        "Mobile app",
+        "Software development"
+      ],
+      "highlights": [
+        "Smart priority queues and flexible recurring reminders",
+        "Subtasks, category tags, and intuitive task checklists",
+        "Completely offline with local database backup & restore"
+      ]
     },
     {
       "id": "app.habitly",
@@ -80,7 +220,27 @@
       "playStoreUrl": "https://play.google.com/store/apps/details?id=app.habitly",
       "iconUrl": "/images/habitly.png",
       "status": "coming_soon",
-      "description": "A minimal habit tracker that helps you build lasting habits and unstoppable streaks."
+      "category": "Android utility & Habit building",
+      "tagline": "Build lasting habits and unstoppable streaks",
+      "description": "A minimal habit tracker that helps you build lasting habits and unstoppable streaks.",
+      "featured": false,
+      "year": "2025",
+      "client": "Samyukt Proprietary",
+      "stack": [
+        "Flutter",
+        "Dart",
+        "Local Storage",
+        "Interactive Charts"
+      ],
+      "services": [
+        "Mobile app",
+        "Software development"
+      ],
+      "highlights": [
+        "Minimalist habit creation and daily streak tracking",
+        "Interactive weekly/monthly consistency heatmaps and statistics",
+        "Zero-cloud sync guaranteeing total user privacy"
+      ]
     }
   ],
   "websites": [
