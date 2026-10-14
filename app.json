@@ -1,4 +1,14 @@
 {
+  "version": "2.0.0",
+  "updatedAt": "2026-10-14",
+  "statusOptions": [
+    "production",
+    "published",
+    "in_progress",
+    "closed_testing",
+    "coming_soon",
+    "draft"
+  ],
   "apps": [
     {
       "id": "com.vaultx.vault_x",
@@ -71,6 +81,360 @@
       "iconUrl": "/images/habitly.png",
       "status": "coming_soon",
       "description": "A minimal habit tracker that helps you build lasting habits and unstoppable streaks."
+    }
+  ],
+  "websites": [
+    {
+      "id": "samast",
+      "name": "Samast",
+      "slug": "samast",
+      "url": "https://samast.vercel.app/",
+      "iconUrl": "/images/samast-logo.png",
+      "status": "production",
+      "category": "Web platform & Developer tools",
+      "tagline": "Client-side developer utility suite",
+      "description": "A 100% client-side developer utility platform featuring over 145+ tools. Designed with zero-trust architecture, no data tracking, and runs completely in the browser for maximum privacy and speed.",
+      "featured": true,
+      "year": "2025",
+      "client": "Samyukt Proprietary",
+      "stack": [
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "WebAssembly"
+      ],
+      "services": [
+        "Software development",
+        "Web development",
+        "Cybersecurity"
+      ],
+      "highlights": [
+        "Over 145+ developer utilities running entirely in the client browser",
+        "Zero server telemetry, zero analytics tracking, and complete privacy",
+        "High-performance client-side WebAssembly execution engines"
+      ]
+    },
+    {
+      "id": "linkmonks",
+      "name": "Linkmonks",
+      "slug": "linkmonks",
+      "url": "https://linkmonks.vercel.app/",
+      "iconUrl": "/images/linkmonks.ico",
+      "status": "production",
+      "category": "Creator tools & Aggregation",
+      "tagline": "High-performance link aggregator",
+      "description": "Linkmonks is a free, high-performance link-in-bio aggregator for influencers and digital content creators to centralize their web footprint.",
+      "featured": true,
+      "year": "2025",
+      "client": "Digital Creators",
+      "stack": [
+        "React",
+        "Vite",
+        "Tailwind CSS",
+        "Supabase"
+      ],
+      "services": [
+        "Web development"
+      ],
+      "highlights": [
+        "Sub-100ms global load time via edge distribution",
+        "Customizable branding themes and typography",
+        "Built-in conversion analytics without invasive user cookies"
+      ]
+    },
+    {
+      "id": "zierabranding",
+      "name": "ZieraBranding",
+      "slug": "zierabranding",
+      "url": "https://www.zierabranding.com/",
+      "iconUrl": "/images/zierabranding.png",
+      "status": "production",
+      "category": "Corporate branding & Packaging",
+      "tagline": "Corporate branding and print catalog",
+      "description": "Complete custom corporate branding and industrial packaging solutions aligning print quality, outdoor advertising, and swift deliveries.",
+      "featured": false,
+      "year": "2025",
+      "client": "Ziera Branding Inc.",
+      "stack": [
+        "Next.js",
+        "React",
+        "CSS Modules"
+      ],
+      "services": [
+        "Web development",
+        "Software development"
+      ],
+      "highlights": [
+        "Dynamic high-resolution product showcase catalog",
+        "Responsive quote estimation inquiry engine",
+        "Optimized mobile navigation and SEO markup"
+      ]
+    },
+    {
+      "id": "jensen_towing",
+      "name": "Jensen Towing",
+      "slug": "jensen-towing",
+      "url": "https://jensen-towing-gamma.vercel.app/",
+      "iconUrl": "/images/jensen_towing.svg",
+      "status": "production",
+      "category": "Emergency roadside & Dispatch",
+      "tagline": "Rapid vehicle recovery portal",
+      "description": "A rapid-dispatch vehicle recovery and roadside assistance landing page designed with clear emergency triggers and responsive contact workflows.",
+      "featured": false,
+      "year": "2025",
+      "client": "Jensen Fleet Recovery",
+      "stack": [
+        "React",
+        "Tailwind CSS",
+        "Vite"
+      ],
+      "services": [
+        "Web development"
+      ],
+      "highlights": [
+        "Instant one-touch emergency call and dispatch triggers",
+        "Geo-targeted local service availability indicators",
+        "Accessible contrast and high-legibility roadside emergency UI"
+      ]
+    },
+    {
+      "id": "aditya_construction",
+      "name": "Aditya Construction",
+      "slug": "aditya-construction",
+      "url": "https://ack-construction.vercel.app/",
+      "iconUrl": "/images/aditya_construction.svg",
+      "status": "production",
+      "category": "Construction & Architecture",
+      "tagline": "Architectural showcase and project portfolio",
+      "description": "A professional landing page for a construction firm, designed to showcase high-quality craftsmanship, completed projects, and core services with a focus on reliability and modern architectural excellence.",
+      "featured": false,
+      "year": "2025",
+      "client": "Aditya Construction Group",
+      "stack": [
+        "React",
+        "Tailwind CSS"
+      ],
+      "services": [
+        "Web development"
+      ],
+      "highlights": [
+        "Architectural project galleries with categorized filtering",
+        "Client testimonial carousel and safety compliance proofs",
+        "Direct RFQ (Request for Quote) project intake workflows"
+      ]
+    },
+    {
+      "id": "chill_the_beans",
+      "name": "Chill The Beans",
+      "slug": "chill-the-beans",
+      "url": "https://chillthebeans.vercel.app/",
+      "iconUrl": "/images/chillthebean.png",
+      "status": "production",
+      "category": "Hospitality & Digital menu",
+      "tagline": "Artisan cafe showcase & interactive menu",
+      "description": "The tiny cafe Limerick queues for. Rich hot chocolate, fast friendly service, and a cup that is always worth the wait.",
+      "featured": false,
+      "year": "2025",
+      "client": "Chill The Beans Cafe",
+      "stack": [
+        "Next.js",
+        "Tailwind CSS"
+      ],
+      "services": [
+        "Web development"
+      ],
+      "highlights": [
+        "Interactive dietary-filtered digital beverage and food menu",
+        "Location mapping with live queue and opening hours status",
+        "Engaging mobile-optimized editorial cafe aesthetics"
+      ]
+    },
+    {
+      "id": "ak_photography",
+      "name": "AK Photography",
+      "slug": "ak-photography",
+      "url": "https://ankush-photography.vercel.app/",
+      "iconUrl": "/images/ak-photography.png",
+      "status": "production",
+      "category": "Media & Creative portfolio",
+      "tagline": "High-fidelity visual photography portfolio",
+      "description": "A portfolio website for a photographer to showcase creative work, attract potential clients, and provide information about services with lazy-loaded media.",
+      "featured": false,
+      "year": "2025",
+      "client": "Ankush Photography",
+      "stack": [
+        "React",
+        "Vite",
+        "Tailwind CSS"
+      ],
+      "services": [
+        "Web development"
+      ],
+      "highlights": [
+        "Lossless WebP image optimization with responsive srcset",
+        "Masonry gallery layout with full-screen lightbox viewing",
+        "Booking calendar integration and client inquiry forms"
+      ]
+    },
+    {
+      "id": "sonal_krupa_travels",
+      "name": "Sonal Krupa Travels",
+      "slug": "sonal-krupa-travels",
+      "url": "https://sonalkrupa.vercel.app/",
+      "iconUrl": "/images/sonal_krupa_travels.svg",
+      "status": "production",
+      "category": "Travel & Tourism",
+      "tagline": "Tours and travel agency portal",
+      "description": "A dynamic landing page for a tours and travels agency, featuring organized tour packages, destination highlights, and an intuitive user interface to simplify travel planning.",
+      "featured": false,
+      "year": "2025",
+      "client": "Sonal Krupa Travels",
+      "stack": [
+        "React",
+        "Tailwind CSS"
+      ],
+      "services": [
+        "Web development"
+      ],
+      "highlights": [
+        "Curated multi-day itinerary timelines and package brochures",
+        "WhatsApp booking trigger and automated quote requests",
+        "Vehicle fleet showcase with transparent passenger capacities"
+      ]
+    },
+    {
+      "id": "tenzin_sopa",
+      "name": "Tenzin Sopa",
+      "slug": "tenzin-sopa",
+      "url": "https://tenzin-sopa.vercel.app/",
+      "iconUrl": "/images/tenzin_sopa.ico",
+      "status": "production",
+      "category": "Developer portfolio & Engineering",
+      "tagline": "Personal developer portfolio & technical index",
+      "description": "A sleek, highly optimized personal developer portfolio website showcasing custom projects, coding milestones, and technical resources.",
+      "featured": false,
+      "year": "2025",
+      "client": "Tenzin Sopa",
+      "stack": [
+        "React",
+        "Vite"
+      ],
+      "services": [
+        "Web development"
+      ],
+      "highlights": [
+        "Interactive technical skills radar and project repository grid",
+        "Dark mode support with fluid CSS transition timings",
+        "Perfect 100 Lighthouse performance and SEO scores"
+      ]
+    },
+    {
+      "id": "east_metro_glass",
+      "name": "East Metro Glass",
+      "slug": "east-metro-glass",
+      "url": "https://east-metro-glass-ashy.vercel.app/",
+      "iconUrl": "/images/east_metro_glass.svg",
+      "status": "production",
+      "category": "Industrial & Architectural glazing",
+      "tagline": "Commercial glass fitting & project catalog",
+      "description": "A minimalist corporate website showcasing professional residential and commercial glazing services, custom glass fitting, and project catalogs.",
+      "featured": false,
+      "year": "2025",
+      "client": "East Metro Glass",
+      "stack": [
+        "React",
+        "Tailwind CSS"
+      ],
+      "services": [
+        "Web development"
+      ],
+      "highlights": [
+        "Residential and commercial project categorization",
+        "Safety glass specifications and architectural warranty details",
+        "Direct measurement request and consultation scheduler"
+      ]
+    },
+    {
+      "id": "downtown_towing",
+      "name": "Downtown Towing",
+      "slug": "downtown-towing",
+      "url": "https://downtown-towing-two.vercel.app/",
+      "iconUrl": "/images/downtown_towing.svg",
+      "status": "production",
+      "category": "Emergency services & Roadside",
+      "tagline": "Emergency roadside assistance landing page",
+      "description": "An emergency roadside service landing page designed for local SEO visibility, fast loading times, and one-tap emergency call triggers.",
+      "featured": false,
+      "year": "2025",
+      "client": "Downtown Towing Services",
+      "stack": [
+        "React",
+        "Tailwind CSS"
+      ],
+      "services": [
+        "Web development"
+      ],
+      "highlights": [
+        "Sub-second mobile loading for drivers stranded on roadsides",
+        "Direct GPS location sharing integration for dispatchers",
+        "Local schema markup for top search engine map placements"
+      ]
+    },
+    {
+      "id": "webdevarmy",
+      "name": "Webdevarmy",
+      "slug": "webdevarmy",
+      "url": "https://webdevarmy.vercel.app/",
+      "iconUrl": "/images/webdevarmy.png",
+      "status": "production",
+      "category": "EdTech & Web engineering",
+      "tagline": "Interactive developer education hub",
+      "description": "An interactive web engineering school landing page highlighting advanced JavaScript programs, developer roadmaps, and programming bootcamps.",
+      "featured": false,
+      "year": "2025",
+      "client": "Webdevarmy Academy",
+      "stack": [
+        "React",
+        "Tailwind CSS",
+        "Vite"
+      ],
+      "services": [
+        "Web development",
+        "Software development"
+      ],
+      "highlights": [
+        "Interactive curriculum outlines with module preview videos",
+        "Student enrollment workflows and batch scheduling",
+        "Community mentorship forum and code challenge integration"
+      ]
+    },
+    {
+      "id": "python_world",
+      "name": "PythonWorldIn",
+      "slug": "python-world",
+      "url": "https://python-world-landing-page.vercel.app/",
+      "iconUrl": "/images/python_world.svg",
+      "status": "production",
+      "category": "Automation & Developer scripting",
+      "tagline": "Python scripting & automation portal",
+      "description": "A modern portal for Python developers showcasing background scripting services, API integrations, web scrapers, and software automation solutions.",
+      "featured": false,
+      "year": "2025",
+      "client": "PythonWorldIn",
+      "stack": [
+        "Next.js",
+        "Python",
+        "Tailwind CSS"
+      ],
+      "services": [
+        "AI and automation",
+        "Software development"
+      ],
+      "highlights": [
+        "Catalog of production-ready automation workflows and scrapers",
+        "Live API documentation sandbox with code samples",
+        "Custom enterprise integration quote builder"
+      ]
     }
   ]
 }

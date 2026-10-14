@@ -1,15 +1,16 @@
-# 📱 Mobile Applications Registry & Portfolio CDN
+# 🌐 Samyukt Unified Ecosystem Registry (Apps & Websites)
 
-[![Applications](https://img.shields.io/badge/Apps-8%20Listed-blue.svg?style=for-the-badge&logo=android)](app.json)
+[![Apps](https://img.shields.io/badge/Apps-8%20Listed-blue.svg?style=for-the-badge&logo=android)](app.json)
+[![Websites](https://img.shields.io/badge/Websites-13%20Listed-blueviolet.svg?style=for-the-badge&logo=googlechrome)](app.json)
 [![Status](https://img.shields.io/badge/Status-Active%20Registry-success.svg?style=for-the-badge)](app.json)
-[![Developer](https://img.shields.io/badge/Developer-Karan%20Kacha-orange.svg?style=for-the-badge&logo=github)](https://github.com/kachakaran6)
-[![Portfolio](https://img.shields.io/badge/Website-kachakaran.me-purple.svg?style=for-the-badge&logo=google-chrome)](https://kachakaran.me)
+[![Developer](https://img.shields.io/badge/Organization-Samyukt-23256B.svg?style=for-the-badge)](https://samyukt.pro)
+[![Maintainer](https://img.shields.io/badge/Maintainer-Karan%20Kacha-orange.svg?style=for-the-badge&logo=github)](https://github.com/kachakaran6)
 
-Centralized mobile application catalog and static asset repository maintained by **[Karan Kacha](https://kachakaran.me)**. This repository serves as the single source of truth (SSOT) and remote config endpoint for in-app "Our Apps" showcases, portfolio sites, and app discovery services across the ecosystem.
+Centralized application catalog, web platforms registry, and static asset CDN for **[Samyukt](https://samyukt.pro)** and ecosystem products. This repository serves as the **Single Source of Truth (SSOT)** for dynamically feeding live showcases, portfolio catalogs, and discovery hubs.
 
 ---
 
-## 🌐 Endpoints
+## 🚀 Live Endpoints
 
 | Resource | URL |
 | :--- | :--- |
@@ -18,7 +19,21 @@ Centralized mobile application catalog and static asset repository maintained by
 
 ---
 
-## 📦 Application Showcase
+## 🎯 Supported Statuses
+
+Manage any product lifecycle directly through the `status` key in `app.json`:
+
+| Status Value | Meaning | Samyukt Display Badge |
+| :--- | :--- | :--- |
+| `"production"` / `"published"` | Publicly live on Google Play or web domain | **Live / Active** (Green) |
+| `"closed_testing"` | Active closed-testing track / restricted preview | **Closed Testing** (Purple) |
+| `"in_progress"` | Under active engineering / development | **In Progress** (Blue) |
+| `"coming_soon"` | Upcoming release / pre-registration | **Coming Soon** (Amber) |
+| `"draft"` | Internal staging / not yet launched | **Draft / Staging** (Gray) |
+
+---
+
+## 📱 Mobile Applications Showcase
 
 | App | Name & Package | Status | Description | Play Store |
 | :---: | :--- | :---: | :--- | :---: |
@@ -33,10 +48,30 @@ Centralized mobile application catalog and static asset repository maintained by
 
 ---
 
-## 🗂 Data Schema (`app.json`)
+## 💻 Websites & Web Platforms Showcase
 
-Each entry inside the `apps` array conforms to the following schema:
+| Website | Category & Tech | Status | Description | Live Site |
+| :---: | :--- | :---: | :--- | :---: |
+| <img src="images/samast-logo.png" width="48" height="48" style="border-radius:10px" alt="Samast" /> | **Samast**<br>`Next.js, TypeScript, Tailwind CSS` | ![Live](https://img.shields.io/badge/Production-10B981?style=flat-square) | A 100% client-side developer utility platform featuring over 145+ tools. Designed wit... | [Visit Site](https://samast.vercel.app/) |
+| <img src="images/linkmonks.ico" width="48" height="48" style="border-radius:10px" alt="Linkmonks" /> | **Linkmonks**<br>`React, Vite, Tailwind CSS` | ![Live](https://img.shields.io/badge/Production-10B981?style=flat-square) | Linkmonks is a free, high-performance link-in-bio aggregator for influencers and digi... | [Visit Site](https://linkmonks.vercel.app/) |
+| <img src="images/zierabranding.png" width="48" height="48" style="border-radius:10px" alt="ZieraBranding" /> | **ZieraBranding**<br>`Next.js, React, CSS Modules` | ![Live](https://img.shields.io/badge/Production-10B981?style=flat-square) | Complete custom corporate branding and industrial packaging solutions aligning print ... | [Visit Site](https://www.zierabranding.com/) |
+| <img src="images/jensen_towing.svg" width="48" height="48" style="border-radius:10px" alt="Jensen Towing" /> | **Jensen Towing**<br>`React, Tailwind CSS, Vite` | ![Live](https://img.shields.io/badge/Production-10B981?style=flat-square) | A rapid-dispatch vehicle recovery and roadside assistance landing page designed with ... | [Visit Site](https://jensen-towing-gamma.vercel.app/) |
+| <img src="images/aditya_construction.svg" width="48" height="48" style="border-radius:10px" alt="Aditya Construction" /> | **Aditya Construction**<br>`React, Tailwind CSS` | ![Live](https://img.shields.io/badge/Production-10B981?style=flat-square) | A professional landing page for a construction firm, designed to showcase high-qualit... | [Visit Site](https://ack-construction.vercel.app/) |
+| <img src="images/chillthebean.png" width="48" height="48" style="border-radius:10px" alt="Chill The Beans" /> | **Chill The Beans**<br>`Next.js, Tailwind CSS` | ![Live](https://img.shields.io/badge/Production-10B981?style=flat-square) | The tiny cafe Limerick queues for. Rich hot chocolate, fast friendly service, and a c... | [Visit Site](https://chillthebeans.vercel.app/) |
+| <img src="images/ak-photography.png" width="48" height="48" style="border-radius:10px" alt="AK Photography" /> | **AK Photography**<br>`React, Vite, Tailwind CSS` | ![Live](https://img.shields.io/badge/Production-10B981?style=flat-square) | A portfolio website for a photographer to showcase creative work, attract potential c... | [Visit Site](https://ankush-photography.vercel.app/) |
+| <img src="images/sonal_krupa_travels.svg" width="48" height="48" style="border-radius:10px" alt="Sonal Krupa Travels" /> | **Sonal Krupa Travels**<br>`React, Tailwind CSS` | ![Live](https://img.shields.io/badge/Production-10B981?style=flat-square) | A dynamic landing page for a tours and travels agency, featuring organized tour packa... | [Visit Site](https://sonalkrupa.vercel.app/) |
+| <img src="images/tenzin_sopa.ico" width="48" height="48" style="border-radius:10px" alt="Tenzin Sopa" /> | **Tenzin Sopa**<br>`React, Vite` | ![Live](https://img.shields.io/badge/Production-10B981?style=flat-square) | A sleek, highly optimized personal developer portfolio website showcasing custom proj... | [Visit Site](https://tenzin-sopa.vercel.app/) |
+| <img src="images/east_metro_glass.svg" width="48" height="48" style="border-radius:10px" alt="East Metro Glass" /> | **East Metro Glass**<br>`React, Tailwind CSS` | ![Live](https://img.shields.io/badge/Production-10B981?style=flat-square) | A minimalist corporate website showcasing professional residential and commercial gla... | [Visit Site](https://east-metro-glass-ashy.vercel.app/) |
+| <img src="images/downtown_towing.svg" width="48" height="48" style="border-radius:10px" alt="Downtown Towing" /> | **Downtown Towing**<br>`React, Tailwind CSS` | ![Live](https://img.shields.io/badge/Production-10B981?style=flat-square) | An emergency roadside service landing page designed for local SEO visibility, fast lo... | [Visit Site](https://downtown-towing-two.vercel.app/) |
+| <img src="images/webdevarmy.png" width="48" height="48" style="border-radius:10px" alt="Webdevarmy" /> | **Webdevarmy**<br>`React, Tailwind CSS, Vite` | ![Live](https://img.shields.io/badge/Production-10B981?style=flat-square) | An interactive web engineering school landing page highlighting advanced JavaScript p... | [Visit Site](https://webdevarmy.vercel.app/) |
+| <img src="images/python_world.svg" width="48" height="48" style="border-radius:10px" alt="PythonWorldIn" /> | **PythonWorldIn**<br>`Next.js, Python, Tailwind CSS` | ![Live](https://img.shields.io/badge/Production-10B981?style=flat-square) | A modern portal for Python developers showcasing background scripting services, API i... | [Visit Site](https://python-world-landing-page.vercel.app/) |
 
+
+---
+
+## 📋 Data Schema (`app.json`)
+
+### Mobile App Schema (`apps[]`)
 ```json
 {
   "id": "app.habitly",
@@ -49,80 +84,44 @@ Each entry inside the `apps` array conforms to the following schema:
 }
 ```
 
-### Field Definitions
-
-| Field | Type | Required | Description |
-| :--- | :---: | :---: | :--- |
-| `id` | `string` | Yes | Unique identifier for the application (typically matches `packageName`). |
-| `appName` | `string` | Yes | Display name with optional tagline (e.g. `Habitly - Habit Tracker`). |
-| `packageName` | `string` | Yes | Android Application ID / Bundle Identifier. |
-| `playStoreUrl` | `string` | Yes | Canonical Google Play Store listing URL. |
-| `iconUrl` | `string` | Yes | Relative or absolute path to the app icon image asset (e.g., `/images/habitly.png`). |
-| `status` | `string` | Yes | Release lifecycle: `"production"` (live on store) or `"coming_soon"` (in development / review). |
-| `description` | `string` | Yes | Concise description highlighting key features and value proposition. |
-
----
-
-## 🚀 Client Integration Examples
-
-### Flutter / Dart
-
-```dart
-import 'dart:convert';
-import 'package:http/http.dart' as http;
-
-Future<List<Map<String, dynamic>>> fetchAppsCatalog() async {
-  const url = 'https://raw.githubusercontent.com/kachakaran6/Application-json/main/app.json';
-  final response = await http.get(Uri.parse(url));
-
-  if (response.statusCode == 200) {
-    final Map<String, dynamic> data = jsonDecode(response.body);
-    return List<Map<String, dynamic>>.from(data['apps']);
-  }
-  throw Exception('Failed to load apps catalog');
-}
-```
-
-### JavaScript / TypeScript
-
-```typescript
-interface AppItem {
-  id: string;
-  appName: string;
-  packageName: string;
-  playStoreUrl: string;
-  iconUrl: string;
-  status: 'production' | 'coming_soon';
-  description: string;
-}
-
-async function getApps(): Promise<AppItem[]> {
-  const res = await fetch(
-    'https://raw.githubusercontent.com/kachakaran6/Application-json/main/app.json'
-  );
-  const data = await res.json();
-  return data.apps;
+### Website Schema (`websites[]`)
+```json
+{
+  "id": "samast",
+  "name": "Samast",
+  "slug": "samast",
+  "url": "https://samast.vercel.app/",
+  "iconUrl": "/images/samast-logo.png",
+  "status": "production",
+  "category": "Web platform & Developer tools",
+  "tagline": "Client-side developer utility suite",
+  "description": "A 100% client-side developer utility platform featuring over 145+ tools...",
+  "featured": true,
+  "year": "2025",
+  "client": "Samyukt Proprietary",
+  "stack": ["Next.js", "TypeScript", "Tailwind CSS", "WebAssembly"],
+  "services": ["Software development", "Web development"],
+  "highlights": [
+    "Over 145+ developer utilities running entirely in the client browser"
+  ]
 }
 ```
 
 ---
 
-## ➕ Adding a New Application
+## 🛠 Adding or Updating an Item
 
-1. **Add Icon Asset**:
-   - Place a square PNG (`512x512` to `1254x1254`) inside the `images/` directory using lowercase kebab-case naming:
-     ```
-     images/<app-name>.png
-     ```
+1. **Add Icon Asset** (optional):
+   - Place image inside `images/` (e.g. `images/my-product.png`).
 2. **Update [app.json](app.json)**:
-   - Add a new object entry to the `"apps"` array adhering to the schema above.
-3. **Commit & Push**:
-   - Once pushed to `main`, raw endpoints will serve the updated catalog immediately.
+   - Add/edit your product inside `apps` or `websites`.
+   - Set the desired `status` (`production`, `in_progress`, `closed_testing`, or `coming_soon`).
+3. **Commit & Push to GitHub**:
+   - As soon as pushed to `main`, Samyukt (and any other consumer) automatically reads and displays the updated entries without needing a code deployment!
 
 ---
 
-## 👨‍💻 Maintainer
+## 👨‍💻 Maintainers
 
-**Karan Kacha**
-- Portfolio: [kachakaran.me](https://kachakaran.me)
-- GitHub: [@kachakaran6](https://github.com/kachakaran6)
+- **Samyukt**: [samyukt.pro](https://samyukt.pro)
+- **Karan Kacha**: [kachakaran.me](https://kachakaran.me) | [@kachakaran6](https://github.com/kachakaran6)
