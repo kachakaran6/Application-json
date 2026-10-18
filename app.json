@@ -1,6 +1,6 @@
 {
   "version": "2.0.0",
-  "updatedAt": "2026-10-14",
+  "updatedAt": "2026-10-18",
   "statusOptions": [
     "production",
     "published",
@@ -240,6 +240,67 @@
         "Minimalist habit creation and daily streak tracking",
         "Interactive weekly/monthly consistency heatmaps and statistics",
         "Zero-cloud sync guaranteeing total user privacy"
+      ]
+    },
+    {
+      "id": "com.finwise.appilcation",
+      "appName": "Finwise - Finance Calculator",
+      "packageName": "com.finwise.appilcation",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.finwise.appilcation",
+      "iconUrl": "/images/finwise.png",
+      "status": "coming_soon",
+      "category": "Android utility & Personal finance",
+      "tagline": "Privacy-first offline personal finance and investment calculators",
+      "description": "A privacy-first, fully offline personal finance and investment calculator app featuring 14 comprehensive financial calculators, interactive growth charts, scenario comparisons, and encrypted backups.",
+      "featured": false,
+      "year": "2026",
+      "client": "Samyukt Proprietary",
+      "stack": [
+        "Flutter",
+        "Dart",
+        "Riverpod",
+        "Local SQLite",
+        "Interactive Charts",
+        "AES-256 Encryption"
+      ],
+      "services": [
+        "Mobile app",
+        "Software development"
+      ],
+      "highlights": [
+        "14 comprehensive financial calculators including SIP, EMI, CAGR, Amortization, and Inflation",
+        "Interactive growth charts, detailed payment schedules, and side-by-side scenario comparisons",
+        "100% offline with zero analytics, no internet permissions, and AES-256 encrypted backups"
+      ]
+    },
+    {
+      "id": "com.arrowz.app",
+      "appName": "ArrowZ - Arrow Escape Puzzle",
+      "packageName": "com.arrowz.app",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.arrowz.app",
+      "iconUrl": "/images/arrowz.png",
+      "status": "coming_soon",
+      "category": "Android game & Logic puzzle",
+      "tagline": "Calm and thoughtful arrow-escape logic puzzle",
+      "description": "A calm, thoughtful offline puzzle game where you untangle intricate arrow boards, discover clear paths, and escape arrows one tap at a time.",
+      "featured": false,
+      "year": "2026",
+      "client": "Samyukt Proprietary",
+      "stack": [
+        "Flutter",
+        "Dart",
+        "Flame Game Engine",
+        "Riverpod",
+        "Audio & Haptics"
+      ],
+      "services": [
+        "Mobile app",
+        "Game development"
+      ],
+      "highlights": [
+        "Minimalist tactile tap-to-escape arrow logic puzzle mechanics",
+        "Handcrafted progressive levels with custom color palettes and smooth animations",
+        "Offline-first experience with on-device persistence, audio, and haptic feedback"
       ]
     }
   ],
