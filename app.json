@@ -336,31 +336,179 @@
       ]
     },
     {
-      "id": "linkmonks",
-      "name": "Linkmonks",
-      "slug": "linkmonks",
-      "url": "https://linkmonks.vercel.app/",
-      "iconUrl": "/images/linkmonks.ico",
+      "id": "samast_pages",
+      "name": "Samast Pages",
+      "slug": "samast-pages",
+      "url": "https://pages.samast.pro/",
+      "iconUrl": "/images/samast-pages.png",
       "status": "production",
-      "category": "Creator tools & Aggregation",
-      "tagline": "High-performance link aggregator",
-      "description": "Linkmonks is a free, high-performance link-in-bio aggregator for influencers and digital content creators to centralize their web footprint.",
+      "category": "Web platform & Workspace",
+      "tagline": "Simple platform for creating and publishing web pages",
+      "description": "Samast Pages is an offline-first, privacy-focused personal workspace combining a distraction-free markdown rich text editor and an infinite whiteboard canvas with 100% client-side IndexedDB local storage.",
       "featured": true,
       "year": "2025",
-      "client": "Digital Creators",
+      "client": "Samyukt Proprietary",
       "stack": [
-        "React",
-        "Vite",
+        "Next.js",
+        "TypeScript",
         "Tailwind CSS",
-        "Supabase"
+        "IndexedDB"
       ],
       "services": [
+        "Software development",
         "Web development"
       ],
       "highlights": [
-        "Sub-100ms global load time via edge distribution",
-        "Customizable branding themes and typography",
-        "Built-in conversion analytics without invasive user cookies"
+        "Offline-first personal workspace with infinite whiteboard canvas",
+        "Distraction-free markdown rich text editor with instant export",
+        "100% client-side privacy with zero remote server data storage"
+      ]
+    },
+    {
+      "id": "samast_forms",
+      "name": "Samast Forms",
+      "slug": "samast-forms",
+      "url": "https://forms.samast.pro/",
+      "iconUrl": "/images/samast-forms.png",
+      "status": "production",
+      "category": "Web platform & Developer tools",
+      "tagline": "Lightweight platform for creating, sharing, and managing custom forms",
+      "description": "Create powerful, customizable forms with drag-and-drop ease. Collect submissions, analyze responses, and share anywhere with fast edge-native performance.",
+      "featured": true,
+      "year": "2025",
+      "client": "Samyukt Proprietary",
+      "stack": [
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "PostgreSQL"
+      ],
+      "services": [
+        "Web development",
+        "Software development"
+      ],
+      "highlights": [
+        "Intuitive drag-and-drop form builder with live previews",
+        "Seamless response collection and export capabilities",
+        "Embeddable and shareable lightweight standalone forms"
+      ]
+    },
+    {
+      "id": "samast_cron",
+      "name": "Samast Cron",
+      "slug": "samast-cron",
+      "url": "https://cron.samast.pro/",
+      "iconUrl": "/images/samast-cron.png",
+      "status": "production",
+      "category": "Developer tools & Cloud infrastructure",
+      "tagline": "Developer-focused platform for scheduling and monitoring cron jobs",
+      "description": "Reliable scheduled HTTP request infrastructure. Schedule, monitor, and execute millisecond-accurate HTTP webhooks and background jobs with automated retries and real-time telemetry.",
+      "featured": true,
+      "year": "2025",
+      "client": "Samyukt Proprietary",
+      "stack": [
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "Serverless Functions"
+      ],
+      "services": [
+        "Software development",
+        "Cloud systems"
+      ],
+      "highlights": [
+        "Millisecond-accurate cron job scheduling for HTTP webhooks",
+        "Automated retry logic and detailed delivery status telemetry",
+        "Real-time execution logs and latency performance tracking"
+      ]
+    },
+    {
+      "id": "vaultx_web",
+      "name": "VaultX Web",
+      "slug": "vaultx-web",
+      "url": "https://vaultx-web.vercel.app/",
+      "iconUrl": "/images/vaultx-web.png",
+      "status": "production",
+      "category": "Privacy & Bookmark utility",
+      "tagline": "Web companion for managing VaultX data across platforms",
+      "description": "Vault X for web and desktop. Local-first link management with IndexedDB, reminders, stats, and encrypted backups.",
+      "featured": true,
+      "year": "2025",
+      "client": "Samyukt Proprietary",
+      "stack": [
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "IndexedDB",
+        "AES-256"
+      ],
+      "services": [
+        "Web development",
+        "Cybersecurity"
+      ],
+      "highlights": [
+        "100% client-side bookmark encryption with zero cloud profiling",
+        "Interactive tagging, search filters, and reminder schedules",
+        "Encrypted JSON backup compatible with Vault X mobile apps"
+      ]
+    },
+    {
+      "id": "beacon",
+      "name": "Beacon",
+      "slug": "beacon",
+      "url": "https://beacon.kachakaran.me/",
+      "iconUrl": "/images/beacon.png",
+      "status": "production",
+      "category": "Productivity & Desktop utility",
+      "tagline": "Lightweight platform for collecting and managing application information",
+      "description": "Beacon is a glanceable frameless desktop notch and Pomodoro timer for Windows 10 and 11. Keep your active task and timer visible without interrupting your workflow.",
+      "featured": true,
+      "year": "2025",
+      "client": "Samyukt Proprietary",
+      "stack": [
+        "Electron",
+        "TypeScript",
+        "React",
+        "Tailwind CSS"
+      ],
+      "services": [
+        "Software development",
+        "Web development"
+      ],
+      "highlights": [
+        "Frameless top-of-screen notch interface for Windows 10/11",
+        "Integrated Pomodoro focus timer and task status tracker",
+        "Ultra-low CPU overhead and distraction-free workflow ergonomics"
+      ]
+    },
+    {
+      "id": "autoeod",
+      "name": "AutoEOD",
+      "slug": "autoeod",
+      "url": "https://autoeod.kachakaran.tech/",
+      "iconUrl": "/images/autoeod.svg",
+      "status": "production",
+      "category": "AI automation & Productivity",
+      "tagline": "Automated end-of-day reporting platform for simplifying work updates",
+      "description": "AutoEOD — AI-powered daily EOD report generator. Automatically aggregates GitHub activity and generates clean, professional standup reports in seconds.",
+      "featured": true,
+      "year": "2025",
+      "client": "Samyukt Proprietary",
+      "stack": [
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "OpenAI API",
+        "GitHub API"
+      ],
+      "services": [
+        "AI automation",
+        "Web development"
+      ],
+      "highlights": [
+        "One-click synchronization with GitHub repository activity",
+        "AI-generated executive summary bullets and standup notes",
+        "Customizable tone and formatting for Slack, email, and Jira"
       ]
     },
     {
@@ -389,6 +537,34 @@
         "Dynamic high-resolution product showcase catalog",
         "Responsive quote estimation inquiry engine",
         "Optimized mobile navigation and SEO markup"
+      ]
+    },
+    {
+      "id": "linkmonks",
+      "name": "Linkmonks",
+      "slug": "linkmonks",
+      "url": "https://linkmonks.vercel.app/",
+      "iconUrl": "/images/linkmonks.ico",
+      "status": "production",
+      "category": "Creator tools & Aggregation",
+      "tagline": "High-performance link aggregator",
+      "description": "Linkmonks is a free, high-performance link-in-bio aggregator for influencers and digital content creators to centralize their web footprint.",
+      "featured": true,
+      "year": "2025",
+      "client": "Digital Creators",
+      "stack": [
+        "React",
+        "Vite",
+        "Tailwind CSS",
+        "Supabase"
+      ],
+      "services": [
+        "Web development"
+      ],
+      "highlights": [
+        "Sub-100ms global load time via edge distribution",
+        "Customizable branding themes and typography",
+        "Built-in conversion analytics without invasive user cookies"
       ]
     },
     {
@@ -658,123 +834,6 @@
       ]
     },
     {
-      "id": "samast_pages",
-      "name": "Samast Pages",
-      "slug": "samast-pages",
-      "url": "https://pages.samast.pro/",
-      "iconUrl": "/images/samast-pages.png",
-      "status": "production",
-      "category": "Web platform & Workspace",
-      "tagline": "Simple platform for creating and publishing web pages",
-      "description": "Samast Pages is an offline-first, privacy-focused personal workspace combining a distraction-free markdown rich text editor and an infinite whiteboard canvas with 100% client-side IndexedDB local storage.",
-      "featured": true,
-      "year": "2025",
-      "client": "Samyukt Proprietary",
-      "stack": [
-        "Next.js",
-        "TypeScript",
-        "Tailwind CSS",
-        "IndexedDB"
-      ],
-      "services": [
-        "Software development",
-        "Web development"
-      ],
-      "highlights": [
-        "Offline-first personal workspace with infinite whiteboard canvas",
-        "Distraction-free markdown rich text editor with instant export",
-        "100% client-side privacy with zero remote server data storage"
-      ]
-    },
-    {
-      "id": "samast_forms",
-      "name": "Samast Forms",
-      "slug": "samast-forms",
-      "url": "https://forms.samast.pro/",
-      "iconUrl": "/images/samast-forms.png",
-      "status": "production",
-      "category": "Web platform & Developer tools",
-      "tagline": "Lightweight platform for creating, sharing, and managing custom forms",
-      "description": "Create powerful, customizable forms with drag-and-drop ease. Collect submissions, analyze responses, and share anywhere with fast edge-native performance.",
-      "featured": true,
-      "year": "2025",
-      "client": "Samyukt Proprietary",
-      "stack": [
-        "Next.js",
-        "TypeScript",
-        "Tailwind CSS",
-        "PostgreSQL"
-      ],
-      "services": [
-        "Web development",
-        "Software development"
-      ],
-      "highlights": [
-        "Intuitive drag-and-drop form builder with live previews",
-        "Seamless response collection and export capabilities",
-        "Embeddable and shareable lightweight standalone forms"
-      ]
-    },
-    {
-      "id": "samast_cron",
-      "name": "Samast Cron",
-      "slug": "samast-cron",
-      "url": "https://cron.samast.pro/",
-      "iconUrl": "/images/samast-cron.png",
-      "status": "production",
-      "category": "Developer tools & Cloud infrastructure",
-      "tagline": "Developer-focused platform for scheduling and monitoring cron jobs",
-      "description": "Reliable scheduled HTTP request infrastructure. Schedule, monitor, and execute millisecond-accurate HTTP webhooks and background jobs with automated retries and real-time telemetry.",
-      "featured": true,
-      "year": "2025",
-      "client": "Samyukt Proprietary",
-      "stack": [
-        "Next.js",
-        "TypeScript",
-        "Tailwind CSS",
-        "Serverless Functions"
-      ],
-      "services": [
-        "Software development",
-        "Cloud systems"
-      ],
-      "highlights": [
-        "Millisecond-accurate cron job scheduling for HTTP webhooks",
-        "Automated retry logic and detailed delivery status telemetry",
-        "Real-time execution logs and latency performance tracking"
-      ]
-    },
-    {
-      "id": "autoeod",
-      "name": "AutoEOD",
-      "slug": "autoeod",
-      "url": "https://autoeod.kachakaran.tech/",
-      "iconUrl": "/images/autoeod.svg",
-      "status": "production",
-      "category": "AI automation & Productivity",
-      "tagline": "Automated end-of-day reporting platform for simplifying work updates",
-      "description": "AutoEOD — AI-powered daily EOD report generator. Automatically aggregates GitHub activity and generates clean, professional standup reports in seconds.",
-      "featured": true,
-      "year": "2025",
-      "client": "Samyukt Proprietary",
-      "stack": [
-        "Next.js",
-        "TypeScript",
-        "Tailwind CSS",
-        "OpenAI API",
-        "GitHub API"
-      ],
-      "services": [
-        "AI automation",
-        "Web development"
-      ],
-      "highlights": [
-        "One-click synchronization with GitHub repository activity",
-        "AI-generated executive summary bullets and standup notes",
-        "Customizable tone and formatting for Slack, email, and Jira"
-      ]
-    },
-    {
       "id": "ledgr",
       "name": "Ledgr",
       "slug": "ledgr",
@@ -801,98 +860,6 @@
         "Clean chronological transaction and work logging interface",
         "Fast search filtering, date ranges, and category summaries",
         "Privacy-focused on-device persistence with exportable ledger records"
-      ]
-    },
-    {
-      "id": "samyukt",
-      "name": "Samyukt",
-      "slug": "samyukt",
-      "url": "https://www.samyukt.pro/",
-      "iconUrl": "/images/samyukt.png",
-      "status": "production",
-      "category": "Agency & Software Engineering",
-      "tagline": "Technology platform focused on software, automation, and digital solutions",
-      "description": "Samyukt builds websites, mobile apps, AI automation, cloud infrastructure and secure software for startups, small businesses and enterprises.",
-      "featured": true,
-      "year": "2025",
-      "client": "Samyukt Proprietary",
-      "stack": [
-        "Next.js",
-        "TypeScript",
-        "Tailwind CSS",
-        "Cloudflare"
-      ],
-      "services": [
-        "Software development",
-        "Web development",
-        "Mobile app",
-        "Cybersecurity",
-        "Cloud systems",
-        "AI automation"
-      ],
-      "highlights": [
-        "High-performance Next.js App Router architecture with sub-second page loads",
-        "Dynamic project catalog synchronized directly with GitHub registry",
-        "WCAG AA accessible design system with typography-led aesthetics"
-      ]
-    },
-    {
-      "id": "beacon",
-      "name": "Beacon",
-      "slug": "beacon",
-      "url": "https://beacon.kachakaran.me/",
-      "iconUrl": "/images/beacon.png",
-      "status": "production",
-      "category": "Productivity & Desktop utility",
-      "tagline": "Lightweight platform for collecting and managing application information",
-      "description": "Beacon is a glanceable frameless desktop notch and Pomodoro timer for Windows 10 and 11. Keep your active task and timer visible without interrupting your workflow.",
-      "featured": true,
-      "year": "2025",
-      "client": "Samyukt Proprietary",
-      "stack": [
-        "Electron",
-        "TypeScript",
-        "React",
-        "Tailwind CSS"
-      ],
-      "services": [
-        "Software development",
-        "Web development"
-      ],
-      "highlights": [
-        "Frameless top-of-screen notch interface for Windows 10/11",
-        "Integrated Pomodoro focus timer and task status tracker",
-        "Ultra-low CPU overhead and distraction-free workflow ergonomics"
-      ]
-    },
-    {
-      "id": "vaultx_web",
-      "name": "VaultX Web",
-      "slug": "vaultx-web",
-      "url": "https://vaultx-web.vercel.app/",
-      "iconUrl": "/images/vaultx-web.png",
-      "status": "production",
-      "category": "Privacy & Bookmark utility",
-      "tagline": "Web companion for managing VaultX data across platforms",
-      "description": "Vault X for web and desktop. Local-first link management with IndexedDB, reminders, stats, and encrypted backups.",
-      "featured": true,
-      "year": "2025",
-      "client": "Samyukt Proprietary",
-      "stack": [
-        "Next.js",
-        "TypeScript",
-        "Tailwind CSS",
-        "IndexedDB",
-        "AES-256"
-      ],
-      "services": [
-        "Web development",
-        "Cybersecurity"
-      ],
-      "highlights": [
-        "100% client-side bookmark encryption with zero cloud profiling",
-        "Interactive tagging, search filters, and reminder schedules",
-        "Encrypted JSON backup compatible with Vault X mobile apps"
       ]
     },
     {
