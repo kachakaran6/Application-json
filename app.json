@@ -11,6 +11,30 @@
   ],
   "apps": [
     {
+      "id": "com.testapp.app",
+      "appName": "Test app",
+      "packageName": "com.testapp.app",
+      "playStoreUrl": "",
+      "iconUrl": "/images/downtown_towing.svg",
+      "status": "production",
+      "category": "Android utility & Tools",
+      "tagline": "test tagline pitch",
+      "description": "test desc",
+      "featured": false,
+      "year": "2026",
+      "client": "Samyukt Proprietary",
+      "stack": [
+        "Dart",
+        "Flutter"
+      ],
+      "services": [
+        "Mobile app"
+      ],
+      "highlights": [
+        "Fully offline, private, and secure architecture"
+      ]
+    },
+    {
       "id": "com.vaultx.vault_x",
       "appName": "Vault X",
       "packageName": "com.vaultx.vault_x",
