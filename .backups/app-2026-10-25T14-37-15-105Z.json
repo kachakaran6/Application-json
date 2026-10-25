@@ -1,0 +1,920 @@
+{
+  "version": "2.0.0",
+  "updatedAt": "2026-10-25",
+  "statusOptions": [
+    "production",
+    "published",
+    "in_progress",
+    "closed_testing",
+    "coming_soon",
+    "draft"
+  ],
+  "apps": [
+    {
+      "id": "com.testapp.app",
+      "appName": "Test app",
+      "packageName": "com.testapp.app",
+      "playStoreUrl": "",
+      "iconUrl": "/images/downtown_towing.svg",
+      "status": "production",
+      "category": "Android utility & Tools",
+      "tagline": "test tagline pitch",
+      "description": "test desc",
+      "featured": false,
+      "year": "2026",
+      "client": "Samyukt Proprietary",
+      "stack": [
+        "Dart",
+        "Flutter"
+      ],
+      "services": [
+        "Mobile app"
+      ],
+      "highlights": [
+        "Fully offline, private, and secure architecture"
+      ]
+    },
+    {
+      "id": "com.vaultx.vault_x",
+      "appName": "Vault X",
+      "packageName": "com.vaultx.vault_x",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.vaultx.vault_x",
+      "iconUrl": "/images/vaultx.png",
+      "status": "production",
+      "category": "Android utility & Privacy",
+      "tagline": "Secure on-device digital bookmark vault",
+      "description": "The ultimate link vault. Save, organize, and secure your digital bookmarks effortlessly.",
+      "featured": true,
+      "year": "2025",
+      "client": "Samyukt Proprietary",
+      "stack": [
+        "Flutter",
+        "Dart",
+        "SQLite",
+        "AES-256 Encryption"
+      ],
+      "services": [
+        "Mobile app",
+        "Cybersecurity"
+      ],
+      "highlights": [
+        "100% offline local database with hardware-backed encryption",
+        "Fast biometric authentication (Fingerprint / Face ID)",
+        "Instant categorisation, tagging, and encrypted export backups"
+      ]
+    },
+    {
+      "id": "com.trusttracker.trust_tracker_flutter",
+      "appName": "Trust Tracker",
+      "packageName": "com.trusttracker.trust_tracker_flutter",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.trusttracker.trust_tracker_flutter",
+      "iconUrl": "/images/trust-tracker.png",
+      "status": "production",
+      "category": "Android utility & Personal finance",
+      "tagline": "Offline subscription and expense ledger",
+      "description": "A secure personal finance app to effortlessly track your subscriptions and manage daily expenses",
+      "featured": true,
+      "year": "2025",
+      "client": "Samyukt Proprietary",
+      "stack": [
+        "Flutter",
+        "Dart",
+        "Local SQLite",
+        "Riverpod"
+      ],
+      "services": [
+        "Mobile app",
+        "Software development"
+      ],
+      "highlights": [
+        "Automated subscription renewal reminders and cost projections",
+        "Zero-cloud sync guaranteeing total financial privacy",
+        "Interactive analytics and budget breakdown visualisations"
+      ]
+    },
+    {
+      "id": "com.snapdocs.app",
+      "appName": "SnapDocs",
+      "packageName": "com.snapdocs.app",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.snapdocs.app",
+      "iconUrl": "/images/snapdocs.png",
+      "status": "production",
+      "category": "Android utility & Document security",
+      "tagline": "Offline document scanner and vault",
+      "description": "Offline secure document storage application.",
+      "featured": false,
+      "year": "2025",
+      "client": "Samyukt Proprietary",
+      "stack": [
+        "Kotlin",
+        "Android SDK",
+        "Room DB",
+        "Biometrics"
+      ],
+      "services": [
+        "Mobile app",
+        "AI and automation"
+      ],
+      "highlights": [
+        "On-device OCR and document text extraction",
+        "Biometrically secured isolated document vaults",
+        "Compliance-friendly local PDF generation"
+      ]
+    },
+    {
+      "id": "com.noctune.music",
+      "appName": "Noctune",
+      "packageName": "com.noctune.music",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.noctune.music",
+      "iconUrl": "/images/noctune.png",
+      "status": "production",
+      "category": "Android utility & Audio engine",
+      "tagline": "Modern offline music player",
+      "description": "Modern music player for music lovers who want to listen offline.",
+      "featured": false,
+      "year": "2025",
+      "client": "Samyukt Proprietary",
+      "stack": [
+        "Flutter",
+        "Dart",
+        "ExoPlayer",
+        "Audio Service"
+      ],
+      "services": [
+        "Mobile app",
+        "Software development"
+      ],
+      "highlights": [
+        "Hardware-accelerated audio codec pipeline",
+        "Zero background battery drain and lightweight memory footprint",
+        "Curated tag management and offline playlist synchronization"
+      ]
+    },
+    {
+      "id": "com.divinegeeta.app",
+      "appName": "Divine Geeta: Daily Wisdom",
+      "packageName": "com.divinegeeta.app",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.divinegeeta.app",
+      "iconUrl": "/images/divine-geeta.png",
+      "status": "production",
+      "category": "Android utility & Spiritual wisdom",
+      "tagline": "Daily spiritual wisdom and insights for a peaceful life",
+      "description": "Daily spiritual wisdom and insights for a peaceful life.",
+      "featured": false,
+      "year": "2025",
+      "client": "Samyukt Proprietary",
+      "stack": [
+        "Flutter",
+        "Dart",
+        "Clean Architecture",
+        "Local Storage"
+      ],
+      "services": [
+        "Mobile app",
+        "Software development"
+      ],
+      "highlights": [
+        "Daily curated Bhagavad Gita shlokas with clear English & Hindi translations",
+        "Clean, peaceful typography and distraction-free reader mode",
+        "100% private, on-device bookmarks and reading progress"
+      ]
+    },
+    {
+      "id": "com.gymbuddy.application",
+      "appName": "GymBuddy - Track Your Body",
+      "packageName": "com.gymbuddy.application",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.gymbuddy.application",
+      "iconUrl": "/images/gymbuddy.png",
+      "status": "coming_soon",
+      "category": "Android utility & Fitness tracking",
+      "tagline": "Workout routines & body measurement tracker",
+      "description": "Monitor workouts, body measurements, fitness progress, and achieve your health goals.",
+      "featured": false,
+      "year": "2025",
+      "client": "Samyukt Proprietary",
+      "stack": [
+        "Flutter",
+        "Dart",
+        "SQLite",
+        "Health Metrics"
+      ],
+      "services": [
+        "Mobile app",
+        "Software development"
+      ],
+      "highlights": [
+        "Accurate body circumference and muscle measurement logging",
+        "Visual progress charts and milestone tracking",
+        "Offline-first private fitness logging with zero server telemetry"
+      ]
+    },
+    {
+      "id": "com.taskmitra.application",
+      "appName": "TaskMitra - Ultimate ToDo",
+      "packageName": "com.taskmitra.application",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.taskmitra.application",
+      "iconUrl": "/images/taskmitra.png",
+      "status": "coming_soon",
+      "category": "Android utility & Task productivity",
+      "tagline": "Organize tasks, manage projects, and set reminders",
+      "description": "Organize tasks, manage projects, set reminders, and boost productivity with ease.",
+      "featured": false,
+      "year": "2025",
+      "client": "Samyukt Proprietary",
+      "stack": [
+        "Flutter",
+        "Dart",
+        "Local SQLite",
+        "State Management"
+      ],
+      "services": [
+        "Mobile app",
+        "Software development"
+      ],
+      "highlights": [
+        "Smart priority queues and flexible recurring reminders",
+        "Subtasks, category tags, and intuitive task checklists",
+        "Completely offline with local database backup & restore"
+      ]
+    },
+    {
+      "id": "app.habitly",
+      "appName": "Habitly - Habit Tracker",
+      "packageName": "app.habitly",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=app.habitly",
+      "iconUrl": "/images/habitly.png",
+      "status": "coming_soon",
+      "category": "Android utility & Habit building",
+      "tagline": "Build lasting habits and unstoppable streaks",
+      "description": "A minimal habit tracker that helps you build lasting habits and unstoppable streaks.",
+      "featured": false,
+      "year": "2025",
+      "client": "Samyukt Proprietary",
+      "stack": [
+        "Flutter",
+        "Dart",
+        "Local Storage",
+        "Interactive Charts"
+      ],
+      "services": [
+        "Mobile app",
+        "Software development"
+      ],
+      "highlights": [
+        "Minimalist habit creation and daily streak tracking",
+        "Interactive weekly/monthly consistency heatmaps and statistics",
+        "Zero-cloud sync guaranteeing total user privacy"
+      ]
+    },
+    {
+      "id": "com.finwise.appilcation",
+      "appName": "Finwise - Finance Calculator",
+      "packageName": "com.finwise.appilcation",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.finwise.appilcation",
+      "iconUrl": "/images/finwise.png",
+      "status": "coming_soon",
+      "category": "Android utility & Personal finance",
+      "tagline": "Privacy-first offline personal finance and investment calculators",
+      "description": "A privacy-first, fully offline personal finance and investment calculator app featuring 14 comprehensive financial calculators, interactive growth charts, scenario comparisons, and encrypted backups.",
+      "featured": false,
+      "year": "2026",
+      "client": "Samyukt Proprietary",
+      "stack": [
+        "Flutter",
+        "Dart",
+        "Riverpod",
+        "Local SQLite",
+        "Interactive Charts",
+        "AES-256 Encryption"
+      ],
+      "services": [
+        "Mobile app",
+        "Software development"
+      ],
+      "highlights": [
+        "14 comprehensive financial calculators including SIP, EMI, CAGR, Amortization, and Inflation",
+        "Interactive growth charts, detailed payment schedules, and side-by-side scenario comparisons",
+        "100% offline with zero analytics, no internet permissions, and AES-256 encrypted backups"
+      ]
+    },
+    {
+      "id": "com.arrowz.app",
+      "appName": "ArrowZ - Arrow Escape Puzzle",
+      "packageName": "com.arrowz.app",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.arrowz.app",
+      "iconUrl": "/images/arrowz.png",
+      "status": "coming_soon",
+      "category": "Android game & Logic puzzle",
+      "tagline": "Calm and thoughtful arrow-escape logic puzzle",
+      "description": "A calm, thoughtful offline puzzle game where you untangle intricate arrow boards, discover clear paths, and escape arrows one tap at a time.",
+      "featured": false,
+      "year": "2026",
+      "client": "Samyukt Proprietary",
+      "stack": [
+        "Flutter",
+        "Dart",
+        "Flame Game Engine",
+        "Riverpod",
+        "Audio & Haptics"
+      ],
+      "services": [
+        "Mobile app",
+        "Game development"
+      ],
+      "highlights": [
+        "Minimalist tactile tap-to-escape arrow logic puzzle mechanics",
+        "Handcrafted progressive levels with custom color palettes and smooth animations",
+        "Offline-first experience with on-device persistence, audio, and haptic feedback"
+      ]
+    }
+  ],
+  "websites": [
+    {
+      "id": "samast",
+      "name": "Samast",
+      "slug": "samast",
+      "url": "https://www.samast.pro/",
+      "iconUrl": "/images/samast-logo.png",
+      "status": "production",
+      "category": "Web platform & Developer tools",
+      "tagline": "All-in-one collection of practical web tools for everyday digital tasks",
+      "description": "A 100% client-side developer utility platform featuring over 145+ tools. Designed with zero-trust architecture, no data tracking, and runs completely in the browser for maximum privacy and speed.",
+      "featured": true,
+      "year": "2025",
+      "client": "Samyukt Proprietary",
+      "stack": [
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "WebAssembly"
+      ],
+      "services": [
+        "Software development",
+        "Web development",
+        "Cybersecurity"
+      ],
+      "highlights": [
+        "Over 145+ developer utilities running entirely in the client browser",
+        "Zero server telemetry, zero analytics tracking, and complete privacy",
+        "High-performance client-side WebAssembly execution engines"
+      ]
+    },
+    {
+      "id": "samast_pages",
+      "name": "Samast Pages",
+      "slug": "samast-pages",
+      "url": "https://pages.samast.pro/",
+      "iconUrl": "/images/samast-pages.png",
+      "status": "production",
+      "category": "Web platform & Workspace",
+      "tagline": "Simple platform for creating and publishing web pages",
+      "description": "Samast Pages is an offline-first, privacy-focused personal workspace combining a distraction-free markdown rich text editor and an infinite whiteboard canvas with 100% client-side IndexedDB local storage.",
+      "featured": true,
+      "year": "2025",
+      "client": "Samyukt Proprietary",
+      "stack": [
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "IndexedDB"
+      ],
+      "services": [
+        "Software development",
+        "Web development"
+      ],
+      "highlights": [
+        "Offline-first personal workspace with infinite whiteboard canvas",
+        "Distraction-free markdown rich text editor with instant export",
+        "100% client-side privacy with zero remote server data storage"
+      ]
+    },
+    {
+      "id": "samast_forms",
+      "name": "Samast Forms",
+      "slug": "samast-forms",
+      "url": "https://forms.samast.pro/",
+      "iconUrl": "/images/samast-forms.png",
+      "status": "production",
+      "category": "Web platform & Developer tools",
+      "tagline": "Lightweight platform for creating, sharing, and managing custom forms",
+      "description": "Create powerful, customizable forms with drag-and-drop ease. Collect submissions, analyze responses, and share anywhere with fast edge-native performance.",
+      "featured": true,
+      "year": "2025",
+      "client": "Samyukt Proprietary",
+      "stack": [
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "PostgreSQL"
+      ],
+      "services": [
+        "Web development",
+        "Software development"
+      ],
+      "highlights": [
+        "Intuitive drag-and-drop form builder with live previews",
+        "Seamless response collection and export capabilities",
+        "Embeddable and shareable lightweight standalone forms"
+      ]
+    },
+    {
+      "id": "samast_cron",
+      "name": "Samast Cron",
+      "slug": "samast-cron",
+      "url": "https://cron.samast.pro/",
+      "iconUrl": "/images/samast-cron.png",
+      "status": "production",
+      "category": "Developer tools & Cloud infrastructure",
+      "tagline": "Developer-focused platform for scheduling and monitoring cron jobs",
+      "description": "Reliable scheduled HTTP request infrastructure. Schedule, monitor, and execute millisecond-accurate HTTP webhooks and background jobs with automated retries and real-time telemetry.",
+      "featured": true,
+      "year": "2025",
+      "client": "Samyukt Proprietary",
+      "stack": [
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "Serverless Functions"
+      ],
+      "services": [
+        "Software development",
+        "Cloud systems"
+      ],
+      "highlights": [
+        "Millisecond-accurate cron job scheduling for HTTP webhooks",
+        "Automated retry logic and detailed delivery status telemetry",
+        "Real-time execution logs and latency performance tracking"
+      ]
+    },
+    {
+      "id": "vaultx_web",
+      "name": "VaultX Web",
+      "slug": "vaultx-web",
+      "url": "https://vaultx-web.vercel.app/",
+      "iconUrl": "/images/vaultx-web.png",
+      "status": "production",
+      "category": "Privacy & Bookmark utility",
+      "tagline": "Web companion for managing VaultX data across platforms",
+      "description": "Vault X for web and desktop. Local-first link management with IndexedDB, reminders, stats, and encrypted backups.",
+      "featured": true,
+      "year": "2025",
+      "client": "Samyukt Proprietary",
+      "stack": [
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "IndexedDB",
+        "AES-256"
+      ],
+      "services": [
+        "Web development",
+        "Cybersecurity"
+      ],
+      "highlights": [
+        "100% client-side bookmark encryption with zero cloud profiling",
+        "Interactive tagging, search filters, and reminder schedules",
+        "Encrypted JSON backup compatible with Vault X mobile apps"
+      ]
+    },
+    {
+      "id": "beacon",
+      "name": "Beacon",
+      "slug": "beacon",
+      "url": "https://beacon.kachakaran.me/",
+      "iconUrl": "/images/beacon.png",
+      "status": "production",
+      "category": "Productivity & Desktop utility",
+      "tagline": "Lightweight platform for collecting and managing application information",
+      "description": "Beacon is a glanceable frameless desktop notch and Pomodoro timer for Windows 10 and 11. Keep your active task and timer visible without interrupting your workflow.",
+      "featured": true,
+      "year": "2025",
+      "client": "Samyukt Proprietary",
+      "stack": [
+        "Electron",
+        "TypeScript",
+        "React",
+        "Tailwind CSS"
+      ],
+      "services": [
+        "Software development",
+        "Web development"
+      ],
+      "highlights": [
+        "Frameless top-of-screen notch interface for Windows 10/11",
+        "Integrated Pomodoro focus timer and task status tracker",
+        "Ultra-low CPU overhead and distraction-free workflow ergonomics"
+      ]
+    },
+    {
+      "id": "autoeod",
+      "name": "AutoEOD",
+      "slug": "autoeod",
+      "url": "https://autoeod.kachakaran.tech/",
+      "iconUrl": "/images/autoeod.svg",
+      "status": "production",
+      "category": "AI automation & Productivity",
+      "tagline": "Automated end-of-day reporting platform for simplifying work updates",
+      "description": "AutoEOD — AI-powered daily EOD report generator. Automatically aggregates GitHub activity and generates clean, professional standup reports in seconds.",
+      "featured": true,
+      "year": "2025",
+      "client": "Samyukt Proprietary",
+      "stack": [
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "OpenAI API",
+        "GitHub API"
+      ],
+      "services": [
+        "AI automation",
+        "Web development"
+      ],
+      "highlights": [
+        "One-click synchronization with GitHub repository activity",
+        "AI-generated executive summary bullets and standup notes",
+        "Customizable tone and formatting for Slack, email, and Jira"
+      ]
+    },
+    {
+      "id": "zierabranding",
+      "name": "ZieraBranding",
+      "slug": "zierabranding",
+      "url": "https://www.zierabranding.com/",
+      "iconUrl": "/images/zierabranding.png",
+      "status": "production",
+      "category": "Corporate branding & Packaging",
+      "tagline": "Corporate branding and print catalog",
+      "description": "Complete custom corporate branding and industrial packaging solutions aligning print quality, outdoor advertising, and swift deliveries.",
+      "featured": false,
+      "year": "2025",
+      "client": "Ziera Branding Inc.",
+      "stack": [
+        "Next.js",
+        "React",
+        "CSS Modules"
+      ],
+      "services": [
+        "Web development",
+        "Software development"
+      ],
+      "highlights": [
+        "Dynamic high-resolution product showcase catalog",
+        "Responsive quote estimation inquiry engine",
+        "Optimized mobile navigation and SEO markup"
+      ]
+    },
+    {
+      "id": "linkmonks",
+      "name": "Linkmonks",
+      "slug": "linkmonks",
+      "url": "https://linkmonks.vercel.app/",
+      "iconUrl": "/images/linkmonks.ico",
+      "status": "production",
+      "category": "Creator tools & Aggregation",
+      "tagline": "High-performance link aggregator",
+      "description": "Linkmonks is a free, high-performance link-in-bio aggregator for influencers and digital content creators to centralize their web footprint.",
+      "featured": true,
+      "year": "2025",
+      "client": "Digital Creators",
+      "stack": [
+        "React",
+        "Vite",
+        "Tailwind CSS",
+        "Supabase"
+      ],
+      "services": [
+        "Web development"
+      ],
+      "highlights": [
+        "Sub-100ms global load time via edge distribution",
+        "Customizable branding themes and typography",
+        "Built-in conversion analytics without invasive user cookies"
+      ]
+    },
+    {
+      "id": "jensen_towing",
+      "name": "Jensen Towing",
+      "slug": "jensen-towing",
+      "url": "https://jensen-towing-gamma.vercel.app/",
+      "iconUrl": "/images/jensen_towing.svg",
+      "status": "production",
+      "category": "Emergency roadside & Dispatch",
+      "tagline": "Rapid vehicle recovery portal",
+      "description": "A rapid-dispatch vehicle recovery and roadside assistance landing page designed with clear emergency triggers and responsive contact workflows.",
+      "featured": false,
+      "year": "2025",
+      "client": "Jensen Fleet Recovery",
+      "stack": [
+        "React",
+        "Tailwind CSS",
+        "Vite"
+      ],
+      "services": [
+        "Web development"
+      ],
+      "highlights": [
+        "Instant one-touch emergency call and dispatch triggers",
+        "Geo-targeted local service availability indicators",
+        "Accessible contrast and high-legibility roadside emergency UI"
+      ]
+    },
+    {
+      "id": "aditya_construction",
+      "name": "Aditya Construction",
+      "slug": "aditya-construction",
+      "url": "https://ack-construction.vercel.app/",
+      "iconUrl": "/images/aditya_construction.svg",
+      "status": "production",
+      "category": "Construction & Architecture",
+      "tagline": "Architectural showcase and project portfolio",
+      "description": "A professional landing page for a construction firm, designed to showcase high-quality craftsmanship, completed projects, and core services with a focus on reliability and modern architectural excellence.",
+      "featured": false,
+      "year": "2025",
+      "client": "Aditya Construction Group",
+      "stack": [
+        "React",
+        "Tailwind CSS"
+      ],
+      "services": [
+        "Web development"
+      ],
+      "highlights": [
+        "Architectural project galleries with categorized filtering",
+        "Client testimonial carousel and safety compliance proofs",
+        "Direct RFQ (Request for Quote) project intake workflows"
+      ]
+    },
+    {
+      "id": "chill_the_beans",
+      "name": "Chill The Beans",
+      "slug": "chill-the-beans",
+      "url": "https://chillthebeans.vercel.app/",
+      "iconUrl": "/images/chillthebean.png",
+      "status": "production",
+      "category": "Hospitality & Digital menu",
+      "tagline": "Artisan cafe showcase & interactive menu",
+      "description": "The tiny cafe Limerick queues for. Rich hot chocolate, fast friendly service, and a cup that is always worth the wait.",
+      "featured": false,
+      "year": "2025",
+      "client": "Chill The Beans Cafe",
+      "stack": [
+        "Next.js",
+        "Tailwind CSS"
+      ],
+      "services": [
+        "Web development"
+      ],
+      "highlights": [
+        "Interactive dietary-filtered digital beverage and food menu",
+        "Location mapping with live queue and opening hours status",
+        "Engaging mobile-optimized editorial cafe aesthetics"
+      ]
+    },
+    {
+      "id": "ak_photography",
+      "name": "AK Photography",
+      "slug": "ak-photography",
+      "url": "https://ankush-photography.vercel.app/",
+      "iconUrl": "/images/ak-photography.png",
+      "status": "production",
+      "category": "Media & Creative portfolio",
+      "tagline": "High-fidelity visual photography portfolio",
+      "description": "A portfolio website for a photographer to showcase creative work, attract potential clients, and provide information about services with lazy-loaded media.",
+      "featured": false,
+      "year": "2025",
+      "client": "Ankush Photography",
+      "stack": [
+        "React",
+        "Vite",
+        "Tailwind CSS"
+      ],
+      "services": [
+        "Web development"
+      ],
+      "highlights": [
+        "Lossless WebP image optimization with responsive srcset",
+        "Masonry gallery layout with full-screen lightbox viewing",
+        "Booking calendar integration and client inquiry forms"
+      ]
+    },
+    {
+      "id": "sonal_krupa_travels",
+      "name": "Sonal Krupa Travels",
+      "slug": "sonal-krupa-travels",
+      "url": "https://sonalkrupa.vercel.app/",
+      "iconUrl": "/images/sonal_krupa_travels.svg",
+      "status": "production",
+      "category": "Travel & Tourism",
+      "tagline": "Tours and travel agency portal",
+      "description": "A dynamic landing page for a tours and travels agency, featuring organized tour packages, destination highlights, and an intuitive user interface to simplify travel planning.",
+      "featured": false,
+      "year": "2025",
+      "client": "Sonal Krupa Travels",
+      "stack": [
+        "React",
+        "Tailwind CSS"
+      ],
+      "services": [
+        "Web development"
+      ],
+      "highlights": [
+        "Curated multi-day itinerary timelines and package brochures",
+        "WhatsApp booking trigger and automated quote requests",
+        "Vehicle fleet showcase with transparent passenger capacities"
+      ]
+    },
+    {
+      "id": "tenzin_sopa",
+      "name": "Tenzin Sopa",
+      "slug": "tenzin-sopa",
+      "url": "https://tenzin-sopa.vercel.app/",
+      "iconUrl": "/images/tenzin_sopa.ico",
+      "status": "production",
+      "category": "Developer portfolio & Engineering",
+      "tagline": "Personal developer portfolio & technical index",
+      "description": "A sleek, highly optimized personal developer portfolio website showcasing custom projects, coding milestones, and technical resources.",
+      "featured": false,
+      "year": "2025",
+      "client": "Tenzin Sopa",
+      "stack": [
+        "React",
+        "Vite"
+      ],
+      "services": [
+        "Web development"
+      ],
+      "highlights": [
+        "Interactive technical skills radar and project repository grid",
+        "Dark mode support with fluid CSS transition timings",
+        "Perfect 100 Lighthouse performance and SEO scores"
+      ]
+    },
+    {
+      "id": "east_metro_glass",
+      "name": "East Metro Glass",
+      "slug": "east-metro-glass",
+      "url": "https://east-metro-glass-ashy.vercel.app/",
+      "iconUrl": "/images/east_metro_glass.svg",
+      "status": "production",
+      "category": "Industrial & Architectural glazing",
+      "tagline": "Commercial glass fitting & project catalog",
+      "description": "A minimalist corporate website showcasing professional residential and commercial glazing services, custom glass fitting, and project catalogs.",
+      "featured": false,
+      "year": "2025",
+      "client": "East Metro Glass",
+      "stack": [
+        "React",
+        "Tailwind CSS"
+      ],
+      "services": [
+        "Web development"
+      ],
+      "highlights": [
+        "Residential and commercial project categorization",
+        "Safety glass specifications and architectural warranty details",
+        "Direct measurement request and consultation scheduler"
+      ]
+    },
+    {
+      "id": "downtown_towing",
+      "name": "Downtown Towing",
+      "slug": "downtown-towing",
+      "url": "https://downtown-towing-two.vercel.app/",
+      "iconUrl": "/images/downtown_towing.svg",
+      "status": "production",
+      "category": "Emergency services & Roadside",
+      "tagline": "Emergency roadside assistance landing page",
+      "description": "An emergency roadside service landing page designed for local SEO visibility, fast loading times, and one-tap emergency call triggers.",
+      "featured": false,
+      "year": "2025",
+      "client": "Downtown Towing Services",
+      "stack": [
+        "React",
+        "Tailwind CSS"
+      ],
+      "services": [
+        "Web development"
+      ],
+      "highlights": [
+        "Sub-second mobile loading for drivers stranded on roadsides",
+        "Direct GPS location sharing integration for dispatchers",
+        "Local schema markup for top search engine map placements"
+      ]
+    },
+    {
+      "id": "webdevarmy",
+      "name": "Webdevarmy",
+      "slug": "webdevarmy",
+      "url": "https://webdevarmy.vercel.app/",
+      "iconUrl": "/images/webdevarmy.png",
+      "status": "production",
+      "category": "EdTech & Web engineering",
+      "tagline": "Interactive developer education hub",
+      "description": "An interactive web engineering school landing page highlighting advanced JavaScript programs, developer roadmaps, and programming bootcamps.",
+      "featured": false,
+      "year": "2025",
+      "client": "Webdevarmy Academy",
+      "stack": [
+        "React",
+        "Tailwind CSS",
+        "Vite"
+      ],
+      "services": [
+        "Web development",
+        "Software development"
+      ],
+      "highlights": [
+        "Interactive curriculum outlines with module preview videos",
+        "Student enrollment workflows and batch scheduling",
+        "Community mentorship forum and code challenge integration"
+      ]
+    },
+    {
+      "id": "python_world",
+      "name": "PythonWorldIn",
+      "slug": "python-world",
+      "url": "https://python-world-landing-page.vercel.app/",
+      "iconUrl": "/images/python_world.svg",
+      "status": "production",
+      "category": "Automation & Developer scripting",
+      "tagline": "Python scripting & automation portal",
+      "description": "A modern portal for Python developers showcasing background scripting services, API integrations, web scrapers, and software automation solutions.",
+      "featured": false,
+      "year": "2025",
+      "client": "PythonWorldIn",
+      "stack": [
+        "Next.js",
+        "Python",
+        "Tailwind CSS"
+      ],
+      "services": [
+        "AI and automation",
+        "Software development"
+      ],
+      "highlights": [
+        "Catalog of production-ready automation workflows and scrapers",
+        "Live API documentation sandbox with code samples",
+        "Custom enterprise integration quote builder"
+      ]
+    },
+    {
+      "id": "ledgr",
+      "name": "Ledgr",
+      "slug": "ledgr",
+      "url": "https://ledgr.kachakaran.tech/",
+      "iconUrl": "/images/ledgr.svg",
+      "status": "production",
+      "category": "Finance & Productivity",
+      "tagline": "Lightweight digital ledger for tracking transactions and financial records",
+      "description": "Ledgr — Work Ledger. Record finished work, milestones, and financial transactions in a warm, grounded historical ledger.",
+      "featured": true,
+      "year": "2025",
+      "client": "Samyukt Proprietary",
+      "stack": [
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "SQLite"
+      ],
+      "services": [
+        "Web development",
+        "Software development"
+      ],
+      "highlights": [
+        "Clean chronological transaction and work logging interface",
+        "Fast search filtering, date ranges, and category summaries",
+        "Privacy-focused on-device persistence with exportable ledger records"
+      ]
+    },
+    {
+      "id": "trusttracker_web",
+      "name": "TrustTracker Web",
+      "slug": "trusttracker-web",
+      "url": "https://trusttracker.kachakaran.me/",
+      "iconUrl": "/images/trusttracker-web.png",
+      "status": "production",
+      "category": "Personal finance & Expense manager",
+      "tagline": "Web companion for managing and viewing TrustTracker financial records",
+      "description": "TrustTracker - Personal Finance & Group Expense Manager. Web companion for tracking subscriptions, expenses, and managing financial privacy.",
+      "featured": true,
+      "year": "2025",
+      "client": "Samyukt Proprietary",
+      "stack": [
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "Riverpod",
+        "SQLite"
+      ],
+      "services": [
+        "Web development",
+        "Software development"
+      ],
+      "highlights": [
+        "Comprehensive subscription renewal tracking and expense analytics",
+        "Fair group expense splitting with multi-currency calculations",
+        "Privacy-focused financial storage with zero third-party telemetry"
+      ]
+    }
+  ]
+}
