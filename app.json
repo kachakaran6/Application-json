@@ -11,35 +11,6 @@
   ],
   "apps": [
     {
-      "id": "com.abctesting.app",
-      "appName": "Abc-testing",
-      "packageName": "com.abctesting.app",
-      "playStoreUrl": "https://www.google.com",
-      "iconUrl": "/images/samyukt.png",
-      "status": "coming_soon",
-      "category": "Android utility & Tools",
-      "tagline": "wqdwd",
-      "description": "wefaESfcdszcsd",
-      "featured": false,
-      "year": "2026",
-      "client": "Samyukt Proprietary",
-      "stack": [
-        "Flutter",
-        "Dart",
-        "af",
-        "asDASC"
-      ],
-      "services": [
-        "Mobile app"
-      ],
-      "highlights": [
-        "Fully offline, private, and secure architecture",
-        "ACSAcs",
-        "ASCAZc",
-        "aSCASasqasa"
-      ]
-    },
-    {
       "id": "com.vaultx.vault_x",
       "appName": "Vault X",
       "packageName": "com.vaultx.vault_x",
