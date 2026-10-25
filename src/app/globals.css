@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 9%; /* #171717 */
+    --foreground: 0 0% 93%; /* #EDEDED */
+
+    --card: 0 0% 11%; /* #1C1C1C */
+    --card-foreground: 0 0% 93%;
+
+    --popover: 0 0% 11%;
+    --popover-foreground: 0 0% 93%;
+
+    --primary: 158 64% 52%; /* #3ECF8E - Iconic Supabase Emerald */
+    --primary-foreground: 164 85% 7%; /* Dark emerald text for high contrast */
+
+    --secondary: 0 0% 15%; /* #262626 */
+    --secondary-foreground: 0 0% 93%;
+
+    --muted: 0 0% 15%; /* #262626 */
+    --muted-foreground: 0 0% 63%; /* #A1A1AA */
+
+    --accent: 0 0% 16%; /* #292929 */
+    --accent-foreground: 0 0% 93%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 18%; /* #2E2E2E */
+    --input: 0 0% 18%;
+    --ring: 158 64% 52%;
+
+    --radius: 0.5rem; /* Supabase clean 8px radius */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    background-color: #121212;
+  }
+}
+
+/* Supabase specific scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #171717;
+}
+::-webkit-scrollbar-thumb {
+  background: #2e2e2e;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3e3e3e;
+}
+
+/* Supabase grid pattern background */
+.supabase-grid-pattern {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}

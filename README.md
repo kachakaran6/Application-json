@@ -118,6 +118,20 @@ Manage any product lifecycle directly through the `status` key in `app.json`:
 
 ## 🛠 Adding or Updating an Item
 
+### 🚀 Running Registry Studio (Next.js CRUD Web App)
+```bash
+# Start development server
+npm run dev
+
+# Or build & start production server
+npm run build
+npm run start
+```
+Visit http://localhost:3000 to manage applications and websites with modern UI, image uploads, and automated backups.
+- **Master Admin Password**: samyukt@admin2026 (configurable via ADMIN_SECRET in .env.local)
+
+### 📝 Manual Workflow
+
 1. **Add Icon Asset** (optional):
    - Place image inside `images/` (e.g. `images/my-product.png`).
 2. **Update [app.json](app.json)**:
