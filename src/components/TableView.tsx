@@ -28,12 +28,13 @@ export function TableView({ items, onEdit, onDuplicate, onDelete }: TableViewPro
       <Table>
         <TableHeader>
           <TableRow className="border-b border-border bg-[#171717] hover:bg-[#171717]">
-            <TableHead className="w-[300px]">Product & Identifier</TableHead>
-            <TableHead className="w-[120px]">Type</TableHead>
-            <TableHead className="w-[140px]">Status</TableHead>
-            <TableHead className="w-[200px]">Category</TableHead>
+            <TableHead className="w-[280px]">Product & Identifier</TableHead>
+            <TableHead className="w-[110px]">Type</TableHead>
+            <TableHead className="w-[130px]">Status</TableHead>
+            <TableHead className="w-[180px]">Category</TableHead>
+            <TableHead className="min-w-[220px]">Description & Pitch</TableHead>
             <TableHead>Tech Stack</TableHead>
-            <TableHead className="w-[80px]">Year</TableHead>
+            <TableHead className="w-[70px]">Year</TableHead>
             <TableHead className="w-[130px] text-right">Actions</TableHead>
           </TableRow>
         </TableHeader>
@@ -43,6 +44,7 @@ export function TableView({ items, onEdit, onDuplicate, onDelete }: TableViewPro
             const title = isApp ? (item as AppItem).appName : (item as WebsiteItem).name;
             const subtitle = isApp ? (item as AppItem).packageName : (item as WebsiteItem).slug;
             const url = isApp ? (item as AppItem).playStoreUrl : (item as WebsiteItem).url;
+            const desc = item.description || item.tagline || "";
 
             return (
               <TableRow key={item.id} className="hover:bg-[#202020] transition-colors border-border">
@@ -65,7 +67,7 @@ export function TableView({ items, onEdit, onDuplicate, onDelete }: TableViewPro
                         <span className="truncate">{title}</span>
                         {item.featured && <Sparkles className="w-3 h-3 text-amber-400 shrink-0" />}
                       </div>
-                      <div className="font-mono text-[10px] text-muted-foreground truncate max-w-[200px]">
+                      <div className="font-mono text-[10px] text-muted-foreground truncate max-w-[180px]">
                         {subtitle}
                       </div>
                     </div>
@@ -90,13 +92,20 @@ export function TableView({ items, onEdit, onDuplicate, onDelete }: TableViewPro
                 </TableCell>
 
                 {/* Category */}
-                <TableCell className="text-muted-foreground text-xs truncate max-w-[180px]">
+                <TableCell className="text-muted-foreground text-xs truncate max-w-[160px]">
                   {item.category}
+                </TableCell>
+
+                {/* Description Column */}
+                <TableCell>
+                  <p className="text-xs text-muted-foreground line-clamp-2 max-w-[260px] leading-relaxed">
+                    {desc}
+                  </p>
                 </TableCell>
 
                 {/* Stack */}
                 <TableCell>
-                  <div className="flex flex-wrap gap-1 max-w-[240px]">
+                  <div className="flex flex-wrap gap-1 max-w-[200px]">
                     {item.stack?.slice(0, 3).map((st) => (
                       <span
                         key={st}

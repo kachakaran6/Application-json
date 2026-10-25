@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import {
   ExternalLink,
   Edit2,
@@ -18,6 +18,7 @@ import { StatusBadge } from "./StatusBadge";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { cn } from "@/lib/utils";
 
 interface ItemCardProps {
   item: AppItem | WebsiteItem;
@@ -44,6 +45,7 @@ export function ItemCard({
   onMoveUp,
   onMoveDown,
 }: ItemCardProps) {
+  const [expandedDesc, setExpandedDesc] = useState(false);
   const isApp = type === "app";
   const app = isApp ? (item as AppItem) : null;
   const web = !isApp ? (item as WebsiteItem) : null;
@@ -51,6 +53,10 @@ export function ItemCard({
   const title = isApp ? app!.appName : web!.name;
   const subtitle = isApp ? app!.packageName : web!.slug;
   const url = isApp ? app!.playStoreUrl : web!.url;
+
+  const hasDistinctDescription =
+    Boolean(item.description) &&
+    item.description.trim().toLowerCase() !== item.tagline?.trim().toLowerCase();
 
   return (
     <Card className="group relative flex flex-col justify-between border-border bg-[#1C1C1C] hover:border-[#383838] transition-colors rounded-lg overflow-hidden">
@@ -112,16 +118,32 @@ export function ItemCard({
 
           {/* Tagline */}
           {item.tagline && (
-            <p className="mt-2 text-xs text-foreground/90 font-medium line-clamp-1">
+            <p className="mt-2 text-xs text-foreground/90 font-medium line-clamp-2">
               {item.tagline}
             </p>
           )}
 
-          {/* Description */}
+          {/* Full Description with Expand/Collapse */}
           {item.description && (
-            <p className="mt-1 text-xs text-muted-foreground line-clamp-2 leading-relaxed">
-              {item.description}
-            </p>
+            <div className="mt-1.5">
+              <p
+                className={cn(
+                  "text-xs text-muted-foreground leading-relaxed",
+                  !expandedDesc && "line-clamp-2"
+                )}
+              >
+                {item.description}
+              </p>
+              {item.description.length > 90 && (
+                <button
+                  type="button"
+                  onClick={() => setExpandedDesc(!expandedDesc)}
+                  className="text-[10px] text-brand hover:underline font-medium mt-0.5 inline-block"
+                >
+                  {expandedDesc ? "Show less" : "Read more"}
+                </button>
+              )}
+            </div>
           )}
 
           {/* Highlights */}

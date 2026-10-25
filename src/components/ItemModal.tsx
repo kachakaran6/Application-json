@@ -416,14 +416,20 @@ export function ItemModal({
             </div>
 
             <div>
-              <label className="block text-[11px] font-medium text-foreground mb-1">
-                Full Description
-              </label>
+              <div className="flex items-center justify-between mb-1">
+                <label className="block text-[11px] font-medium text-foreground">
+                  Full Description
+                </label>
+                <span className="text-[10px] text-muted-foreground font-mono">
+                  {description.length} chars
+                </span>
+              </div>
               <Textarea
-                rows={2}
+                rows={3}
                 value={description}
                 onChange={(e) => setDescription(e.target.value)}
-                placeholder="Full description of features, privacy architecture, etc."
+                placeholder="Full description of features, architecture, and privacy guarantees..."
+                className="text-xs leading-relaxed"
               />
             </div>
           </div>

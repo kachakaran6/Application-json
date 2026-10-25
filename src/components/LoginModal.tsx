@@ -92,9 +92,6 @@ export function LoginModal({ isOpen, onClose, onLoginSuccess }: LoginModalProps)
                 className="pl-9 font-mono"
               />
             </div>
-            <p className="mt-1 text-[11px] text-muted-foreground">
-              Default password: <code className="text-brand font-mono">samyukt@admin2026</code> (configurable via <code className="text-foreground">ADMIN_SECRET</code> in <code className="text-foreground">.env.local</code>)
-            </p>
           </div>
 
           <DialogFooter className="pt-2 flex items-center justify-end gap-2">

@@ -128,7 +128,7 @@ npm run build
 npm run start
 ```
 Visit http://localhost:3000 to manage applications and websites with modern UI, image uploads, and automated backups.
-- **Master Admin Password**: samyukt@admin2026 (configurable via ADMIN_SECRET in .env.local)
+- **Master Admin Password**: Configured securely via ADMIN_SECRET environment variable.
 
 ### 📝 Manual Workflow
 
