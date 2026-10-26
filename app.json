@@ -1,6 +1,6 @@
 {
   "version": "2.0.0",
-  "updatedAt": "2026-10-25",
+  "updatedAt": "2026-10-26",
   "statusOptions": [
     "production",
     "published",
@@ -279,7 +279,7 @@
       "packageName": "com.arrowz.app",
       "playStoreUrl": "https://play.google.com/store/apps/details?id=com.arrowz.app",
       "iconUrl": "/images/arrowz.png",
-      "status": "coming_soon",
+      "status": "in_progress",
       "category": "Android game & Logic puzzle",
       "tagline": "Calm and thoughtful arrow-escape logic puzzle",
       "description": "A calm, thoughtful offline puzzle game where you untangle intricate arrow boards, discover clear paths, and escape arrows one tap at a time.",
