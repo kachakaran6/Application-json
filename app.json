@@ -214,35 +214,6 @@
       ]
     },
     {
-      "id": "app.habitly",
-      "appName": "Habitly - Habit Tracker",
-      "packageName": "app.habitly",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=app.habitly",
-      "iconUrl": "/images/habitly.png",
-      "status": "coming_soon",
-      "category": "Android utility & Habit building",
-      "tagline": "Build lasting habits and unstoppable streaks",
-      "description": "A minimal habit tracker that helps you build lasting habits and unstoppable streaks.",
-      "featured": false,
-      "year": "2025",
-      "client": "Samyukt Proprietary",
-      "stack": [
-        "Flutter",
-        "Dart",
-        "Local Storage",
-        "Interactive Charts"
-      ],
-      "services": [
-        "Mobile app",
-        "Software development"
-      ],
-      "highlights": [
-        "Minimalist habit creation and daily streak tracking",
-        "Interactive weekly/monthly consistency heatmaps and statistics",
-        "Zero-cloud sync guaranteeing total user privacy"
-      ]
-    },
-    {
       "id": "com.arrowz.app",
       "appName": "ArrowZ - Arrow Escape Puzzle",
       "packageName": "com.arrowz.app",
@@ -270,6 +241,35 @@
         "Minimalist tactile tap-to-escape arrow logic puzzle mechanics",
         "Handcrafted progressive levels with custom color palettes and smooth animations",
         "Offline-first experience with on-device persistence, audio, and haptic feedback"
+      ]
+    },
+    {
+      "id": "app.habitly",
+      "appName": "Habitly - Habit Tracker",
+      "packageName": "app.habitly",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=app.habitly",
+      "iconUrl": "/images/habitly.png",
+      "status": "coming_soon",
+      "category": "Android utility & Habit building",
+      "tagline": "Build lasting habits and unstoppable streaks",
+      "description": "A minimal habit tracker that helps you build lasting habits and unstoppable streaks.",
+      "featured": false,
+      "year": "2025",
+      "client": "Samyukt Proprietary",
+      "stack": [
+        "Flutter",
+        "Dart",
+        "Local Storage",
+        "Interactive Charts"
+      ],
+      "services": [
+        "Mobile app",
+        "Software development"
+      ],
+      "highlights": [
+        "Minimalist habit creation and daily streak tracking",
+        "Interactive weekly/monthly consistency heatmaps and statistics",
+        "Zero-cloud sync guaranteeing total user privacy"
       ]
     },
     {
