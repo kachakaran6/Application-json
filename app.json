@@ -185,35 +185,6 @@
       ]
     },
     {
-      "id": "com.taskmitra.application",
-      "appName": "TaskMitra - Ultimate ToDo",
-      "packageName": "com.taskmitra.application",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.taskmitra.application",
-      "iconUrl": "/images/taskmitra.png",
-      "status": "coming_soon",
-      "category": "Android utility & Task productivity",
-      "tagline": "Organize tasks, manage projects, and set reminders",
-      "description": "Organize tasks, manage projects, set reminders, and boost productivity with ease.",
-      "featured": false,
-      "year": "2025",
-      "client": "Samyukt Proprietary",
-      "stack": [
-        "Flutter",
-        "Dart",
-        "Local SQLite",
-        "State Management"
-      ],
-      "services": [
-        "Mobile app",
-        "Software development"
-      ],
-      "highlights": [
-        "Smart priority queues and flexible recurring reminders",
-        "Subtasks, category tags, and intuitive task checklists",
-        "Completely offline with local database backup & restore"
-      ]
-    },
-    {
       "id": "com.arrowz.app",
       "appName": "ArrowZ - Arrow Escape Puzzle",
       "packageName": "com.arrowz.app",
@@ -241,6 +212,35 @@
         "Minimalist tactile tap-to-escape arrow logic puzzle mechanics",
         "Handcrafted progressive levels with custom color palettes and smooth animations",
         "Offline-first experience with on-device persistence, audio, and haptic feedback"
+      ]
+    },
+    {
+      "id": "com.taskmitra.application",
+      "appName": "TaskMitra - Ultimate ToDo",
+      "packageName": "com.taskmitra.application",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.taskmitra.application",
+      "iconUrl": "/images/taskmitra.png",
+      "status": "coming_soon",
+      "category": "Android utility & Task productivity",
+      "tagline": "Organize tasks, manage projects, and set reminders",
+      "description": "Organize tasks, manage projects, set reminders, and boost productivity with ease.",
+      "featured": false,
+      "year": "2025",
+      "client": "Samyukt Proprietary",
+      "stack": [
+        "Flutter",
+        "Dart",
+        "Local SQLite",
+        "State Management"
+      ],
+      "services": [
+        "Mobile app",
+        "Software development"
+      ],
+      "highlights": [
+        "Smart priority queues and flexible recurring reminders",
+        "Subtasks, category tags, and intuitive task checklists",
+        "Completely offline with local database backup & restore"
       ]
     },
     {
