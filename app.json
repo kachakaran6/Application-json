@@ -127,35 +127,6 @@
       ]
     },
     {
-      "id": "com.divinegeeta.app",
-      "appName": "Divine Geeta: Daily Wisdom",
-      "packageName": "com.divinegeeta.app",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.divinegeeta.app",
-      "iconUrl": "/images/divine-geeta.png",
-      "status": "production",
-      "category": "Android utility & Spiritual wisdom",
-      "tagline": "Daily spiritual wisdom and insights for a peaceful life",
-      "description": "Daily spiritual wisdom and insights for a peaceful life.",
-      "featured": false,
-      "year": "2025",
-      "client": "Samyukt Proprietary",
-      "stack": [
-        "Flutter",
-        "Dart",
-        "Clean Architecture",
-        "Local Storage"
-      ],
-      "services": [
-        "Mobile app",
-        "Software development"
-      ],
-      "highlights": [
-        "Daily curated Bhagavad Gita shlokas with clear English & Hindi translations",
-        "Clean, peaceful typography and distraction-free reader mode",
-        "100% private, on-device bookmarks and reading progress"
-      ]
-    },
-    {
       "id": "com.arrowz.app",
       "appName": "ArrowZ - Arrow Escape Puzzle",
       "packageName": "com.arrowz.app",
@@ -183,6 +154,35 @@
         "Minimalist tactile tap-to-escape arrow logic puzzle mechanics",
         "Handcrafted progressive levels with custom color palettes and smooth animations",
         "Offline-first experience with on-device persistence, audio, and haptic feedback"
+      ]
+    },
+    {
+      "id": "com.divinegeeta.app",
+      "appName": "Divine Geeta: Daily Wisdom",
+      "packageName": "com.divinegeeta.app",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.divinegeeta.app",
+      "iconUrl": "/images/divine-geeta.png",
+      "status": "production",
+      "category": "Android utility & Spiritual wisdom",
+      "tagline": "Daily spiritual wisdom and insights for a peaceful life",
+      "description": "Daily spiritual wisdom and insights for a peaceful life.",
+      "featured": false,
+      "year": "2025",
+      "client": "Samyukt Proprietary",
+      "stack": [
+        "Flutter",
+        "Dart",
+        "Clean Architecture",
+        "Local Storage"
+      ],
+      "services": [
+        "Mobile app",
+        "Software development"
+      ],
+      "highlights": [
+        "Daily curated Bhagavad Gita shlokas with clear English & Hindi translations",
+        "Clean, peaceful typography and distraction-free reader mode",
+        "100% private, on-device bookmarks and reading progress"
       ]
     },
     {
