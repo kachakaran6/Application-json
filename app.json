@@ -156,35 +156,6 @@
       ]
     },
     {
-      "id": "com.gymbuddy.application",
-      "appName": "GymBuddy - Track Your Body",
-      "packageName": "com.gymbuddy.application",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.gymbuddy.application",
-      "iconUrl": "/images/gymbuddy.png",
-      "status": "coming_soon",
-      "category": "Android utility & Fitness tracking",
-      "tagline": "Workout routines & body measurement tracker",
-      "description": "Monitor workouts, body measurements, fitness progress, and achieve your health goals.",
-      "featured": false,
-      "year": "2025",
-      "client": "Samyukt Proprietary",
-      "stack": [
-        "Flutter",
-        "Dart",
-        "SQLite",
-        "Health Metrics"
-      ],
-      "services": [
-        "Mobile app",
-        "Software development"
-      ],
-      "highlights": [
-        "Accurate body circumference and muscle measurement logging",
-        "Visual progress charts and milestone tracking",
-        "Offline-first private fitness logging with zero server telemetry"
-      ]
-    },
-    {
       "id": "com.arrowz.app",
       "appName": "ArrowZ - Arrow Escape Puzzle",
       "packageName": "com.arrowz.app",
@@ -212,6 +183,35 @@
         "Minimalist tactile tap-to-escape arrow logic puzzle mechanics",
         "Handcrafted progressive levels with custom color palettes and smooth animations",
         "Offline-first experience with on-device persistence, audio, and haptic feedback"
+      ]
+    },
+    {
+      "id": "com.gymbuddy.application",
+      "appName": "GymBuddy - Track Your Body",
+      "packageName": "com.gymbuddy.application",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.gymbuddy.application",
+      "iconUrl": "/images/gymbuddy.png",
+      "status": "coming_soon",
+      "category": "Android utility & Fitness tracking",
+      "tagline": "Workout routines & body measurement tracker",
+      "description": "Monitor workouts, body measurements, fitness progress, and achieve your health goals.",
+      "featured": false,
+      "year": "2025",
+      "client": "Samyukt Proprietary",
+      "stack": [
+        "Flutter",
+        "Dart",
+        "SQLite",
+        "Health Metrics"
+      ],
+      "services": [
+        "Mobile app",
+        "Software development"
+      ],
+      "highlights": [
+        "Accurate body circumference and muscle measurement logging",
+        "Visual progress charts and milestone tracking",
+        "Offline-first private fitness logging with zero server telemetry"
       ]
     },
     {
