@@ -302,6 +302,93 @@
         "Interactive growth charts, detailed payment schedules, and side-by-side scenario comparisons",
         "100% offline with zero analytics, no internet permissions, and AES-256 encrypted backups"
       ]
+    },
+    {
+      "id": "com.samyukt.jamrush",
+      "appName": "JamRush",
+      "packageName": "com.samyukt.jamrush",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.samyukt.jamrush",
+      "iconUrl": "/images/jamrush.png",
+      "status": "closed_testing",
+      "category": "Android game & Puzzle",
+      "tagline": "Fast-paced color dispatch and traffic escape puzzle game",
+      "description": "JamRush is a vibrant and addictive color dispatch and traffic escape puzzle game. Solve 100 challenging traffic jam levels with silky-smooth 60 FPS animations. Match car colors to passenger seats, plan your parking maneuvers, and clear the grid!",
+      "featured": false,
+      "year": "2025",
+      "client": "Samyukt Proprietary",
+      "stack": [
+        "Flutter",
+        "Dart",
+        "Flame Engine",
+        "Local SQLite"
+      ],
+      "services": [
+        "Mobile game",
+        "Game development"
+      ],
+      "highlights": [
+        "100 challenging color-coded traffic jam puzzle levels",
+        "Silky-smooth 60 FPS animated color dispatch mechanics",
+        "Offline gameplay with zero mandatory ads"
+      ]
+    },
+    {
+      "id": "com.playpocket.game",
+      "appName": "PlayPocket : Offline Games",
+      "packageName": "com.playpocket.game",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.playpocket.game",
+      "iconUrl": "/images/playpocket.png",
+      "status": "closed_testing",
+      "category": "Android game & Arcade",
+      "tagline": "Play 12+ classic offline games in one app without Wi-Fi",
+      "description": "Welcome to PlayPocket: Offline Games — your ultimate all-in-one pocket arcade for instant fun anytime, anywhere, with zero internet or mobile data required! Features Solitaire, 2048, Sudoku, Block Puzzle, Snake Classic, Brick Breaker, Word Search, Minesweeper, Memory Match, Tic Tac Toe, and more.",
+      "featured": false,
+      "year": "2025",
+      "client": "Samyukt Proprietary",
+      "stack": [
+        "Flutter",
+        "Dart",
+        "Flame Engine",
+        "Hive DB"
+      ],
+      "services": [
+        "Mobile game",
+        "Arcade"
+      ],
+      "highlights": [
+        "12+ classic offline arcade and puzzle games in a single bundle",
+        "100% offline gameplay with zero Wi-Fi or data required",
+        "Battery-friendly lightweight engine with haptic feedback"
+      ]
+    },
+    {
+      "id": "com.samyukt.mazequest",
+      "appName": "MazeQuest: Maze Puzzle Game",
+      "packageName": "com.samyukt.mazequest",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.samyukt.mazequest",
+      "iconUrl": "/images/mazequest.png",
+      "status": "closed_testing",
+      "category": "Android game & Puzzle",
+      "tagline": "Drag, solve, and conquer 100+ handcrafted mazes offline",
+      "description": "Embark on a mesmerizing labyrinth journey with MazeQuest — the ultimate offline-first maze puzzle adventure designed for mindful relaxation and strategic challenge. Guide your glowing runner through intricate corridors, discovering optimal paths and unlocking stunning visual themes.",
+      "featured": false,
+      "year": "2025",
+      "client": "Samyukt Proprietary",
+      "stack": [
+        "Flutter",
+        "Dart",
+        "Custom Canvas",
+        "SharedPreferences"
+      ],
+      "services": [
+        "Mobile game",
+        "Casual game"
+      ],
+      "highlights": [
+        "100 handcrafted maze levels spanning 10 distinct chapters",
+        "5 game modes: Classic, Challenge, Time Trial, Relax, Daily Challenge",
+        "7 visual themes with pure offline play and player-first economy"
+      ]
     }
   ],
   "websites": [

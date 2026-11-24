@@ -1,0 +1,508 @@
+[
+  {
+    "packageName": "com.arrowz.app",
+    "catalogName": "ArrowZ",
+    "iconUrl": "/images/arrowz.png",
+    "playStoreUrl": "https://play.google.com/store/apps/details?id=com.arrowz.app",
+    "status": "success",
+    "isLiveProduction": true,
+    "isClosedTesting": false,
+    "isInternalDraft": false,
+    "production": {
+      "name": "1.2.11",
+      "versionCodes": [
+        "74"
+      ],
+      "releaseNotes": [
+        {
+          "language": "en-US",
+          "text": "- Restored natural replay video playback speeds (Slow, Medium, and Fast)\n- Sleek redesigned bottom branding watermark with official arrowz.samyukt.pro link\n- Crystal-clear official Google Play Store badge and ArrowZ app logo in exported videos\n- Performance optimizations and smooth replay recording"
+        }
+      ],
+      "status": "completed"
+    },
+    "alpha": {
+      "name": "1.2.11",
+      "versionCodes": [
+        "74"
+      ],
+      "releaseNotes": [
+        {
+          "language": "en-US",
+          "text": "- Restored natural replay video playback speeds (Slow, Medium, and Fast)\n- Sleek redesigned bottom branding watermark with official arrowz.samyukt.pro link\n- Crystal-clear official Google Play Store badge and ArrowZ app logo in exported videos\n- Performance optimizations and smooth replay recording"
+        }
+      ],
+      "status": "completed"
+    },
+    "internal": {
+      "name": "1.2.11",
+      "versionCodes": [
+        "74"
+      ],
+      "releaseNotes": [
+        {
+          "language": "en-US",
+          "text": "- Restored natural replay video playback speeds (Slow, Medium, and Fast)\n- Sleek redesigned bottom branding watermark with official arrowz.samyukt.pro link\n- Crystal-clear official Google Play Store badge and ArrowZ app logo in exported videos\n- Performance optimizations and smooth replay recording"
+        }
+      ],
+      "status": "completed"
+    }
+  },
+  {
+    "packageName": "com.snapdocs.app",
+    "catalogName": "SnapDocs",
+    "iconUrl": "/images/snapdocs.png",
+    "playStoreUrl": "https://play.google.com/store/apps/details?id=com.snapdocs.app",
+    "status": "success",
+    "isLiveProduction": true,
+    "isClosedTesting": false,
+    "isInternalDraft": false,
+    "production": {
+      "name": "38 (1.0.18)",
+      "versionCodes": [
+        "38"
+      ],
+      "releaseNotes": [
+        {
+          "language": "en-US",
+          "text": "- UI enhancement\n- High-resolution QR code image sharing to WhatsApp & apps\n- QR code is now shared as a scannable PNG alongside document details\n- Added direct \"Share QR Code Image\" in document share options\n- Scannable QR modal now includes one-tap \"Share QR Image\" button"
+        }
+      ],
+      "status": "completed"
+    },
+    "alpha": {
+      "name": "1.0.19",
+      "versionCodes": [
+        "39"
+      ],
+      "releaseNotes": [
+        {
+          "language": "en-US",
+          "text": "- Fixed toggle button styling in PDF export with clear thumb contrast\n- Clean concentric ring indicator for accent swatches (removed blur glow)\n- Added direct Document Rename in details and action menus\n- Fixed folder duplicate name validation and document folder persistence\n- Added deletion confirmation dialogs to prevent accidental loss\n- Enabled multi-file upload support and rotation in preview\n- Improved search with partial filename matching & secure QR stream transfer\n"
+        }
+      ],
+      "status": "completed"
+    },
+    "internal": {
+      "name": "1.0.19",
+      "versionCodes": [
+        "39"
+      ],
+      "releaseNotes": [
+        {
+          "language": "en-US",
+          "text": "- Fixed toggle button styling in PDF export with clear thumb contrast\n- Clean concentric ring indicator for accent swatches (removed blur glow)\n- Added direct Document Rename in details and action menus\n- Fixed folder duplicate name validation and document folder persistence\n- Added deletion confirmation dialogs to prevent accidental loss\n- Enabled multi-file upload support and rotation in preview\n- Improved search with partial filename matching & secure QR stream transfer\n"
+        }
+      ],
+      "status": "completed"
+    }
+  },
+  {
+    "packageName": "com.noctune.music",
+    "catalogName": "Noctune",
+    "iconUrl": "/images/noctune.png",
+    "playStoreUrl": "https://play.google.com/store/apps/details?id=com.noctune.music",
+    "status": "success",
+    "isLiveProduction": true,
+    "isClosedTesting": false,
+    "isInternalDraft": false,
+    "production": {
+      "name": "1.0.11",
+      "versionCodes": [
+        "58"
+      ],
+      "releaseNotes": [
+        {
+          "language": "en-US",
+          "text": "- Launch Stability: Resolved startup crash caused by media query race conditions on Android 13–16 devices.\n- Enhanced Artwork Engine: Added high-performance request deduplication and query throttling for smooth scrolling.\n- Instant Permission Recovery: Artwork automatically loads when storage/audio permissions are granted.\n- Library & Themes Polish: Fully refreshed player themes with standardized controls and seamless Light/Dark mode transitions."
+        }
+      ],
+      "status": "completed"
+    },
+    "alpha": {
+      "name": "1.0.3",
+      "versionCodes": [
+        "36"
+      ],
+      "status": "completed"
+    },
+    "internal": {
+      "name": "1.1.2",
+      "versionCodes": [
+        "69"
+      ],
+      "releaseNotes": [
+        {
+          "language": "en-US",
+          "text": "• Fluid Queue Gestures: Physical Bezier glide, decaying multi-bounce landing, and instant interactive queueing.\n• Queue Deduplication & Priority: Swiping an existing song moves it to first priority without duplicate entries.\n• Integrated Queue Bar: Sleek confirmation bar fused with the mini player, featuring View Queue and Undo actions.\n• Sleek Vinyl Experience: Pristine centered docked vinyl mode with smooth rotational dynamics and zero clutter."
+        }
+      ],
+      "status": "completed"
+    }
+  },
+  {
+    "packageName": "com.gymbuddy.application",
+    "catalogName": "GymBuddy",
+    "iconUrl": "/images/gymbuddy.png",
+    "playStoreUrl": "https://play.google.com/store/apps/details?id=com.gymbuddy.application",
+    "status": "success",
+    "isLiveProduction": true,
+    "isClosedTesting": false,
+    "isInternalDraft": false,
+    "production": {
+      "name": "15 (1.0.0)",
+      "versionCodes": [
+        "15"
+      ],
+      "releaseNotes": [
+        {
+          "language": "en-US",
+          "text": "Welcome to GymBuddy — your offline fitness & consistency companion!\n\n• Complete workout logger with custom routines & set tracking\n• Smart rest timer with audio chime & tactical haptics\n• 1-tap daily check-in to build & protect your gym streaks\n• Interactive anatomical muscle map & visual progress heatmaps\n• 7 essential gym tools: 1RM, Barbell Plate Loader, Macros & Body Fat\n• 100% offline privacy with local backup & CSV import\n• Seamless dark & light themes"
+        }
+      ],
+      "status": "completed"
+    },
+    "alpha": {
+      "name": "1.0.0",
+      "versionCodes": [
+        "15"
+      ],
+      "releaseNotes": [
+        {
+          "language": "en-US",
+          "text": "• Streamlined Settings with enhanced privacy transparency and offline-first compliance.\n• Cleaned companion apps catalog with instant offline support.\n• Resolved workout status header layout and text overlap on the Home Screen.\n• Standardized open-source license registration in compliance with Google Play distribution policies.\n• Performance improvements, stability upgrades, and bug fixes."
+        }
+      ],
+      "status": "completed"
+    }
+  },
+  {
+    "packageName": "com.divinegeeta.app",
+    "catalogName": "Bhagwad Gita (Divine Geeta)",
+    "iconUrl": "/images/divine-geeta.png",
+    "playStoreUrl": "https://play.google.com/store/apps/details?id=com.divinegeeta.app",
+    "status": "success",
+    "isLiveProduction": true,
+    "isClosedTesting": false,
+    "isInternalDraft": false,
+    "production": {
+      "name": "1.0.1",
+      "versionCodes": [
+        "7"
+      ],
+      "releaseNotes": [
+        {
+          "language": "en-US",
+          "text": "• UI improvements.\n• Bugs fixes\n• New themes added."
+        }
+      ],
+      "status": "completed"
+    },
+    "alpha": {
+      "name": "1.0.1",
+      "versionCodes": [
+        "7"
+      ],
+      "status": "completed"
+    }
+  },
+  {
+    "packageName": "com.vaultx.vault_x",
+    "catalogName": "VaultX",
+    "iconUrl": "/images/vaultx.png",
+    "playStoreUrl": "https://play.google.com/store/apps/details?id=com.vaultx.vault_x",
+    "status": "success",
+    "isLiveProduction": true,
+    "isClosedTesting": false,
+    "isInternalDraft": false,
+    "production": {
+      "name": "2.0.0",
+      "versionCodes": [
+        "30"
+      ],
+      "releaseNotes": [
+        {
+          "language": "en-US",
+          "text": "What's New in Vault X:\n• Secure encrypted QR sharing for credentials.\n• New Authenticator with auto-refreshing 2FA codes.\n• Security Audit to detect weak passwords.\n• Improved vault organization and credential grouping.\n• Enhanced Autofill and usage tracking.\n• Refined UI, smoother navigation and stability improvements."
+        }
+      ],
+      "status": "completed"
+    },
+    "alpha": {
+      "name": "2.0.0",
+      "versionCodes": [
+        "30"
+      ],
+      "status": "completed"
+    },
+    "internal": {
+      "name": "3 (1.1.0)",
+      "versionCodes": [
+        "3"
+      ],
+      "status": "completed"
+    }
+  },
+  {
+    "packageName": "com.taskmitra.application",
+    "catalogName": "TaskMitra (OrbitTodo)",
+    "iconUrl": "/images/taskmitra.png",
+    "playStoreUrl": "https://play.google.com/store/apps/details?id=com.taskmitra.application",
+    "status": "success",
+    "isLiveProduction": false,
+    "isClosedTesting": true,
+    "isInternalDraft": false,
+    "alpha": {
+      "name": "1.0.0",
+      "versionCodes": [
+        "9"
+      ],
+      "status": "completed"
+    },
+    "internal": {
+      "status": "draft"
+    }
+  },
+  {
+    "packageName": "com.samyukt.doit",
+    "catalogName": "DoIt Mobile",
+    "iconUrl": "/images/doit.png",
+    "playStoreUrl": "https://play.google.com/store/apps/details?id=com.samyukt.doit",
+    "status": "success",
+    "isLiveProduction": false,
+    "isClosedTesting": true,
+    "isInternalDraft": false,
+    "alpha": {
+      "name": "2.0.5",
+      "versionCodes": [
+        "65"
+      ],
+      "status": "completed"
+    },
+    "internal": {
+      "name": "2.0.5",
+      "versionCodes": [
+        "65"
+      ],
+      "status": "completed"
+    }
+  },
+  {
+    "packageName": "com.playpocket.game",
+    "catalogName": "MiniGames (PlayPocket)",
+    "iconUrl": "/images/playpocket.png",
+    "playStoreUrl": "https://play.google.com/store/apps/details?id=com.playpocket.game",
+    "status": "success",
+    "isLiveProduction": false,
+    "isClosedTesting": true,
+    "isInternalDraft": false,
+    "alpha": {
+      "name": "2.0.3",
+      "versionCodes": [
+        "69"
+      ],
+      "releaseNotes": [
+        {
+          "language": "en-US",
+          "text": "• Enhanced Visual Identity: Official PlayPocket 3D squircle application icon with adaptive system theming.\n• Polished User Interface: Refined tactile feedback, splash screen emblem, and in-app brand presentation.\n• System & AdMob Stability: Improved Google Play In-App Updates and Review integration with optimized offline gameplay.\n• Performance & Reliability: Under-the-hood engine tuning and responsive layout adjustments across all devices.\n"
+        }
+      ],
+      "status": "completed"
+    },
+    "internal": {
+      "name": "2.0.3",
+      "versionCodes": [
+        "69"
+      ],
+      "releaseNotes": [
+        {
+          "language": "en-US",
+          "text": "• Enhanced Visual Identity: Official PlayPocket 3D squircle application icon with adaptive system theming.\n• Polished User Interface: Refined tactile feedback, splash screen emblem, and in-app brand presentation.\n• System & AdMob Stability: Improved Google Play In-App Updates and Review integration with optimized offline gameplay.\n• Performance & Reliability: Under-the-hood engine tuning and responsive layout adjustments across all devices.\n"
+        }
+      ],
+      "status": "completed"
+    }
+  },
+  {
+    "packageName": "com.samyukt.dustline",
+    "catalogName": "Dustline Petrol Bloom",
+    "iconUrl": "/images/dustline.png",
+    "playStoreUrl": "https://play.google.com/store/apps/details?id=com.samyukt.dustline",
+    "status": "success",
+    "isLiveProduction": false,
+    "isClosedTesting": true,
+    "isInternalDraft": false,
+    "alpha": {
+      "name": "1.1.1",
+      "versionCodes": [
+        "21"
+      ],
+      "status": "completed"
+    },
+    "internal": {
+      "name": "1.1.1",
+      "versionCodes": [
+        "21"
+      ],
+      "status": "completed"
+    }
+  },
+  {
+    "packageName": "com.equiptrack.com",
+    "catalogName": "EquipTrack",
+    "iconUrl": "/images/equiptrack.png",
+    "playStoreUrl": "https://play.google.com/store/apps/details?id=com.equiptrack.com",
+    "status": "success",
+    "isLiveProduction": false,
+    "isClosedTesting": true,
+    "isInternalDraft": false,
+    "alpha": {
+      "name": "1.0.0",
+      "versionCodes": [
+        "18"
+      ],
+      "status": "completed"
+    },
+    "internal": {
+      "name": "14 (1.0.0)",
+      "versionCodes": [
+        "14"
+      ],
+      "releaseNotes": [
+        {
+          "language": "en-US",
+          "text": "- just one beta version for testing"
+        }
+      ],
+      "status": "completed"
+    }
+  },
+  {
+    "packageName": "com.finwise.appilcation",
+    "catalogName": "Finwise",
+    "iconUrl": "/images/finwise.png",
+    "playStoreUrl": "https://play.google.com/store/apps/details?id=com.finwise.appilcation",
+    "status": "success",
+    "isLiveProduction": false,
+    "isClosedTesting": true,
+    "isInternalDraft": false,
+    "alpha": {
+      "name": "1.0.5",
+      "versionCodes": [
+        "7"
+      ],
+      "releaseNotes": [
+        {
+          "language": "en-US",
+          "text": "• Custom Calculator Studio: Build, test, and save your own formula-based financial models\n• Flexible Interest Payouts: Support for monthly, quarterly, yearly, and maturity compound payouts\n• Refined Studio UI: Intuitive 4-step wizard, interactive category selectors, and formula cheat sheets\n• Scenario Persistence: Full backup, restore, and comparison support for custom calculations\n• 100% private, offline calculations with zero data tracking\n\n"
+        }
+      ],
+      "status": "completed"
+    }
+  },
+  {
+    "packageName": "app.habitly",
+    "catalogName": "Habitly",
+    "iconUrl": "/images/habitly.png",
+    "playStoreUrl": "https://play.google.com/store/apps/details?id=app.habitly",
+    "status": "success",
+    "isLiveProduction": false,
+    "isClosedTesting": true,
+    "isInternalDraft": false,
+    "alpha": {
+      "name": "1.0.0",
+      "versionCodes": [
+        "7"
+      ],
+      "status": "completed"
+    }
+  },
+  {
+    "packageName": "com.samyukt.jamrush",
+    "catalogName": "JamRush",
+    "iconUrl": "/images/jamrush.png",
+    "playStoreUrl": "https://play.google.com/store/apps/details?id=com.samyukt.jamrush",
+    "status": "success",
+    "isLiveProduction": false,
+    "isClosedTesting": true,
+    "isInternalDraft": false,
+    "alpha": {
+      "name": "1.0.5",
+      "versionCodes": [
+        "6"
+      ],
+      "status": "completed"
+    },
+    "internal": {
+      "name": "1.0.5",
+      "versionCodes": [
+        "6"
+      ],
+      "status": "completed"
+    }
+  },
+  {
+    "packageName": "com.samyukt.kairos",
+    "catalogName": "Kairos",
+    "iconUrl": "/images/kairos.png",
+    "playStoreUrl": "https://play.google.com/store/apps/details?id=com.samyukt.kairos",
+    "status": "success",
+    "isLiveProduction": false,
+    "isClosedTesting": true,
+    "isInternalDraft": false,
+    "alpha": {
+      "name": "1.0.4",
+      "versionCodes": [
+        "8"
+      ],
+      "releaseNotes": [
+        {
+          "language": "en-US",
+          "text": "• Launcher Widget Fixes: Resolved RemoteViews reflection issues for TextClock & layouts on HyperOS/Android launchers so all clock and moment widgets inflate smoothly.\n• Restored Back Navigation: Full support for Android system back gestures, predictive back, and responsive in-app AppBar back buttons across all sub-pages.\n• Live Seconds Counter: Continuous hardware-timed seconds count with zero CPU and zero battery drain."
+        }
+      ],
+      "status": "completed"
+    }
+  },
+  {
+    "packageName": "com.samyukt.mazequest",
+    "catalogName": "MazeQuest",
+    "iconUrl": "/images/mazequest.png",
+    "playStoreUrl": "https://play.google.com/store/apps/details?id=com.samyukt.mazequest",
+    "status": "success",
+    "isLiveProduction": false,
+    "isClosedTesting": true,
+    "isInternalDraft": false,
+    "alpha": {
+      "name": "1.0.5",
+      "versionCodes": [
+        "6"
+      ],
+      "status": "completed"
+    },
+    "internal": {
+      "name": "1.0.5",
+      "versionCodes": [
+        "6"
+      ],
+      "status": "completed"
+    }
+  },
+  {
+    "packageName": "app.mediaurl.applicaiton",
+    "catalogName": "VideoDownloader (SaveIt)",
+    "iconUrl": "/images/saveit.png",
+    "playStoreUrl": "https://play.google.com/store/apps/details?id=app.mediaurl.applicaiton",
+    "status": "success",
+    "isLiveProduction": false,
+    "isClosedTesting": true,
+    "isInternalDraft": false,
+    "alpha": {
+      "name": "1.0.4",
+      "versionCodes": [
+        "27"
+      ],
+      "status": "completed"
+    }
+  }
+]

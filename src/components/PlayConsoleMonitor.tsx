@@ -241,6 +241,16 @@ export function PlayConsoleMonitor({ onToast }: PlayConsoleMonitorProps) {
         </div>
       )}
 
+      {/* Notice Banner if fallback */}
+      {data?.notice && (
+        <div className="flex items-center gap-3 p-3 rounded-lg border border-amber-500/30 bg-amber-500/10 text-amber-300 text-xs">
+          <Info className="w-4 h-4 shrink-0 text-amber-400" />
+          <div className="flex-1">
+            <span className="font-semibold">Telemetry Mode:</span> {data.notice}
+          </div>
+        </div>
+      )}
+
       {/* Summary Metric Cards (KPIs) */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
         {/* Total Apps */}
