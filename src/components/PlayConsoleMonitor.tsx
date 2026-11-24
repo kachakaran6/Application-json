@@ -544,7 +544,20 @@ export function PlayConsoleMonitor({ onToast }: PlayConsoleMonitorProps) {
 
                       {/* Production Track */}
                       <TableCell>
-                        {isProdCompleted ? (
+                        {app.status === "error" ? (
+                          <div className="space-y-1">
+                            <span
+                              title={app.errorMessage || "Google Play API temporary error"}
+                              className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded text-[10px] font-medium bg-rose-500/10 text-rose-600 dark:text-rose-400 border border-rose-500/30 cursor-help"
+                            >
+                              <AlertCircle className="w-3 h-3 text-rose-500" />
+                              Sync Error
+                            </span>
+                            <div className="text-[10px] text-muted-foreground truncate max-w-[170px]" title={app.errorMessage}>
+                              Click Refresh Data
+                            </div>
+                          </div>
+                        ) : isProdCompleted ? (
                           <div className="space-y-1">
                             <span className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded text-[10px] font-medium bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">
                               <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
@@ -575,7 +588,9 @@ export function PlayConsoleMonitor({ onToast }: PlayConsoleMonitorProps) {
 
                       {/* Closed Testing (Alpha) Track */}
                       <TableCell>
-                        {hasAlpha ? (
+                        {app.status === "error" ? (
+                          <span className="text-[11px] text-muted-foreground/50 font-mono">--</span>
+                        ) : hasAlpha ? (
                           <div className="space-y-1.5">
                             <div className="flex items-center gap-1.5 flex-wrap">
                               {isProdCompleted ? (
@@ -605,7 +620,9 @@ export function PlayConsoleMonitor({ onToast }: PlayConsoleMonitorProps) {
 
                       {/* Internal Track */}
                       <TableCell>
-                        {hasInternal ? (
+                        {app.status === "error" ? (
+                          <span className="text-[11px] text-muted-foreground/50 font-mono">--</span>
+                        ) : hasInternal ? (
                           <div className="space-y-1">
                             <span className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded text-[10px] font-medium bg-sky-500/10 text-sky-400 border border-sky-500/30">
                               <span className="w-1.5 h-1.5 rounded-full bg-sky-400" />

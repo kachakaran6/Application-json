@@ -42,7 +42,7 @@ function getAppIconsMap(): Record<string, string> {
 }
 
 // Helper to query one app through Google Play API with proper session cleanup
-async function fetchAppPlayStatus(
+async function queryAppSingleAttempt(
   play: any,
   item: { name: string; pkg: string },
   iconsMap: Record<string, string>
@@ -193,6 +193,21 @@ async function fetchAppPlayStatus(
   }
 
   return result;
+}
+
+// Wrapper with automatic retry on transient errors
+async function fetchAppPlayStatus(
+  play: any,
+  item: { name: string; pkg: string },
+  iconsMap: Record<string, string>
+): Promise<AppPlayStatus> {
+  const firstAttempt = await queryAppSingleAttempt(play, item, iconsMap);
+  if (firstAttempt.status === "error") {
+    // Wait 800ms and retry once if Google returned a transient error
+    await new Promise((r) => setTimeout(r, 800));
+    return queryAppSingleAttempt(play, item, iconsMap);
+  }
+  return firstAttempt;
 }
 
 // Concurrency pool helper to run batch of promises smoothly without overloading API

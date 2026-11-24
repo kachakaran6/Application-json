@@ -80,7 +80,44 @@ export default function RegistryStudioPage() {
   useEffect(() => {
     fetchRegistry();
     checkAuth();
+
+    // Sync tab with URL search parameter (?tab=play-console, ?tab=apps, etc.) and localStorage
+    if (typeof window !== "undefined") {
+      const params = new URLSearchParams(window.location.search);
+      const tabParam = params.get("tab");
+      if (tabParam === "play-console" || tabParam === "playstore") {
+        setActiveTab("playstore");
+      } else if (tabParam === "apps") {
+        setActiveTab("apps");
+      } else if (tabParam === "websites") {
+        setActiveTab("websites");
+      } else if (tabParam === "featured") {
+        setActiveTab("featured");
+      } else if (tabParam === "all") {
+        setActiveTab("all");
+      } else {
+        const savedTab = localStorage.getItem("samyukt_active_tab");
+        if (savedTab && ["all", "apps", "websites", "featured", "playstore"].includes(savedTab)) {
+          setActiveTab(savedTab as any);
+        }
+      }
+    }
   }, []);
+
+  function handleTabChange(tab: "all" | "apps" | "websites" | "featured" | "playstore") {
+    setActiveTab(tab);
+    if (typeof window !== "undefined") {
+      const url = new URL(window.location.href);
+      const paramValue = tab === "playstore" ? "play-console" : tab;
+      if (tab === "all") {
+        url.searchParams.delete("tab");
+      } else {
+        url.searchParams.set("tab", paramValue);
+      }
+      window.history.replaceState(null, "", url.toString());
+      localStorage.setItem("samyukt_active_tab", tab);
+    }
+  }
 
   async function checkAuth() {
     try {
@@ -410,7 +447,7 @@ export default function RegistryStudioPage() {
             {/* Supabase Pill Tabs */}
             <div className="flex items-center gap-1 bg-muted/60 p-1 rounded-md border border-border shrink-0 overflow-x-auto">
               <button
-                onClick={() => setActiveTab("all")}
+                onClick={() => handleTabChange("all")}
                 className={`flex items-center gap-1.5 px-3 py-1 rounded text-xs font-medium transition-colors ${
                   activeTab === "all"
                     ? "bg-card text-foreground border border-border shadow-sm"
@@ -424,7 +461,7 @@ export default function RegistryStudioPage() {
               </button>
 
               <button
-                onClick={() => setActiveTab("apps")}
+                onClick={() => handleTabChange("apps")}
                 className={`flex items-center gap-1.5 px-3 py-1 rounded text-xs font-medium transition-colors ${
                   activeTab === "apps"
                     ? "bg-card text-foreground border border-border shadow-sm"
@@ -439,7 +476,7 @@ export default function RegistryStudioPage() {
               </button>
 
               <button
-                onClick={() => setActiveTab("websites")}
+                onClick={() => handleTabChange("websites")}
                 className={`flex items-center gap-1.5 px-3 py-1 rounded text-xs font-medium transition-colors ${
                   activeTab === "websites"
                     ? "bg-card text-foreground border border-border shadow-sm"
@@ -454,7 +491,7 @@ export default function RegistryStudioPage() {
               </button>
 
               <button
-                onClick={() => setActiveTab("featured")}
+                onClick={() => handleTabChange("featured")}
                 className={`flex items-center gap-1.5 px-3 py-1 rounded text-xs font-medium transition-colors ${
                   activeTab === "featured"
                     ? "bg-card text-foreground border border-border shadow-sm"
@@ -466,7 +503,7 @@ export default function RegistryStudioPage() {
               </button>
 
               <button
-                onClick={() => setActiveTab("playstore")}
+                onClick={() => handleTabChange("playstore")}
                 className={`flex items-center gap-1.5 px-3 py-1 rounded text-xs font-medium transition-colors ${
                   activeTab === "playstore"
                     ? "bg-card text-emerald-500 dark:text-emerald-400 border border-emerald-500/30 shadow-sm"
