@@ -44,9 +44,9 @@ function ToastItem({
   };
 
   const borders = {
-    success: "border-brand/40 bg-[#1C1C1C] text-foreground shadow-lg shadow-brand/5",
-    error: "border-rose-500/40 bg-[#1C1C1C] text-foreground",
-    info: "border-blue-500/40 bg-[#1C1C1C] text-foreground",
+    success: "border-brand/40 bg-card text-foreground shadow-lg shadow-brand/5",
+    error: "border-rose-500/40 bg-card text-foreground",
+    info: "border-blue-500/40 bg-card text-foreground",
   };
 
   return (

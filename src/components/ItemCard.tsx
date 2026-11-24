@@ -59,190 +59,196 @@ export function ItemCard({
     item.description.trim().toLowerCase() !== item.tagline?.trim().toLowerCase();
 
   return (
-    <Card className="group relative flex flex-col justify-between border-border bg-[#1C1C1C] hover:border-[#383838] transition-colors rounded-lg overflow-hidden">
-      <CardContent className="p-4 flex flex-col justify-between flex-1">
-        {/* Top Header */}
-        <div>
-          <div className="flex items-start justify-between gap-3">
-            <div className="flex items-center gap-3">
-              {/* App Icon */}
-              <div className="relative w-11 h-11 rounded-md bg-[#141414] border border-border flex items-center justify-center p-1.5 shrink-0 shadow-sm">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src={item.iconUrl || "/images/samyukt.png"}
-                  alt={title}
-                  className="w-full h-full object-contain rounded"
-                  loading="lazy"
-                  onError={(e) => {
-                    (e.target as HTMLImageElement).src = "/images/samyukt.png";
-                  }}
-                />
-                <span className="absolute -bottom-1 -right-1 w-4 h-4 rounded bg-[#1C1C1C] border border-border flex items-center justify-center">
-                  {isApp ? (
-                    <Smartphone className="w-2.5 h-2.5 text-brand" />
-                  ) : (
-                    <Globe className="w-2.5 h-2.5 text-blue-400" />
-                  )}
-                </span>
-              </div>
-
-              {/* Title & Subtitle */}
-              <div className="min-w-0">
-                <div className="flex items-center gap-1.5">
-                  <h3 className="text-xs font-semibold text-foreground truncate group-hover:text-brand transition-colors">
-                    {title}
-                  </h3>
-                  {item.featured && (
-                    <span title="Featured showcase item" className="text-amber-400 shrink-0">
-                      <Sparkles className="w-3.5 h-3.5 fill-amber-400/20" />
-                    </span>
-                  )}
-                </div>
-                <p className="text-[11px] text-muted-foreground font-mono truncate max-w-[200px]">
-                  {subtitle}
-                </p>
-              </div>
-            </div>
-
-            {/* Status Badge */}
-            <StatusBadge status={item.status} />
-          </div>
-
-          {/* Category & Year */}
-          <div className="mt-3 flex flex-wrap items-center gap-1.5 text-[11px]">
-            <Badge variant="secondary" className="font-normal text-[10px] text-muted-foreground bg-[#141414]">
-              {item.category}
-            </Badge>
-            <span className="text-[10px] text-muted-foreground font-mono">{item.year}</span>
-          </div>
-
-          {/* Tagline */}
-          {item.tagline && (
-            <p className="mt-2 text-xs text-foreground/90 font-medium line-clamp-2">
-              {item.tagline}
-            </p>
-          )}
-
-          {/* Full Description with Expand/Collapse */}
-          {item.description && (
-            <div className="mt-1.5">
-              <p
-                className={cn(
-                  "text-xs text-muted-foreground leading-relaxed",
-                  !expandedDesc && "line-clamp-2"
+    <Card className="group relative border-border bg-card hover:border-emerald-500/40 transition-colors shadow-xs flex flex-col justify-between overflow-hidden">
+      <CardContent className="p-4 space-y-3">
+        {/* Top Header: Icon + Titles + Status */}
+        <div className="flex items-start justify-between gap-3">
+          <div className="flex items-start gap-3 min-w-0">
+            {/* App / Website Icon */}
+            <div className="relative w-10 h-10 rounded-md bg-muted border border-border p-1.5 shrink-0 flex items-center justify-center">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={item.iconUrl || "/images/samyukt.png"}
+                alt={title}
+                className="w-full h-full object-contain rounded-xs"
+                loading="lazy"
+                onError={(e) => {
+                  (e.target as HTMLImageElement).src = "/images/samyukt.png";
+                }}
+              />
+              <span className="absolute -bottom-1 -right-1 w-4 h-4 rounded-full bg-card border border-border flex items-center justify-center">
+                {isApp ? (
+                  <Smartphone className="w-2.5 h-2.5 text-emerald-600 dark:text-emerald-400" />
+                ) : (
+                  <Globe className="w-2.5 h-2.5 text-blue-500 dark:text-blue-400" />
                 )}
-              >
-                {item.description}
+              </span>
+            </div>
+
+            {/* Title & Subtitle */}
+            <div className="min-w-0">
+              <div className="flex items-center gap-1.5">
+                <h3 className="text-xs font-semibold text-foreground truncate group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">
+                  {title}
+                </h3>
+                {item.featured && (
+                  <span title="Featured showcase item" className="text-amber-500 shrink-0">
+                    <Sparkles className="w-3.5 h-3.5 fill-amber-500/20" />
+                  </span>
+                )}
+              </div>
+              <p className="text-[11px] text-muted-foreground font-mono truncate max-w-[200px]">
+                {subtitle}
               </p>
-              {item.description.length > 90 && (
-                <button
-                  type="button"
-                  onClick={() => setExpandedDesc(!expandedDesc)}
-                  className="text-[10px] text-brand hover:underline font-medium mt-0.5 inline-block"
-                >
-                  {expandedDesc ? "Show less" : "Read more"}
-                </button>
+            </div>
+          </div>
+
+          {/* Status Badge */}
+          <StatusBadge status={item.status} />
+        </div>
+
+        {/* Category & Year */}
+        <div className="flex flex-wrap items-center gap-1.5 text-[11px]">
+          <Badge variant="secondary" className="font-normal text-[10px] text-muted-foreground bg-muted border-border">
+            {item.category}
+          </Badge>
+          <span className="text-[10px] text-muted-foreground font-mono">{item.year}</span>
+        </div>
+
+        {/* Tagline */}
+        {item.tagline && (
+          <p className="text-xs text-foreground/90 font-medium line-clamp-2 leading-relaxed">
+            {item.tagline}
+          </p>
+        )}
+
+        {/* Full Description with Expand/Collapse */}
+        {item.description && (
+          <div className="space-y-1">
+            <p
+              className={cn(
+                "text-xs text-muted-foreground leading-relaxed",
+                !expandedDesc && "line-clamp-2"
               )}
-            </div>
-          )}
-
-          {/* Highlights */}
-          {item.highlights && item.highlights.length > 0 && (
-            <div className="mt-3 pt-2.5 border-t border-border/60 space-y-1">
-              {item.highlights.slice(0, 2).map((hl, i) => (
-                <div key={i} className="flex items-start gap-1.5 text-[11px] text-muted-foreground">
-                  <CheckCircle2 className="w-3 h-3 text-brand shrink-0 mt-0.5" />
-                  <span className="line-clamp-1">{hl}</span>
-                </div>
-              ))}
-            </div>
-          )}
-
-          {/* Tech Stack Pills */}
-          {item.stack && item.stack.length > 0 && (
-            <div className="mt-3 flex flex-wrap gap-1">
-              {item.stack.map((tech) => (
-                <span
-                  key={tech}
-                  className="text-[10px] px-1.5 py-0.5 rounded bg-[#141414] text-muted-foreground border border-border/80 font-mono"
-                >
-                  {tech}
-                </span>
-              ))}
-            </div>
-          )}
-        </div>
-
-        {/* Footer Actions */}
-        <div className="mt-4 pt-3 border-t border-border flex items-center justify-between gap-2">
-          {/* Reordering */}
-          <div className="flex items-center gap-0.5">
-            <Button
-              variant="ghost"
-              size="iconSm"
-              disabled={index === 0}
-              onClick={() => onMoveUp(index, type)}
-              title="Move Up"
             >
-              <ChevronUp className="w-3.5 h-3.5" />
-            </Button>
-            <Button
-              variant="ghost"
-              size="iconSm"
-              disabled={index === total - 1}
-              onClick={() => onMoveDown(index, type)}
-              title="Move Down"
-            >
-              <ChevronDown className="w-3.5 h-3.5" />
-            </Button>
-            <span className="text-[10px] text-muted-foreground font-mono ml-1">#{index + 1}</span>
-          </div>
-
-          {/* Actions */}
-          <div className="flex items-center gap-1">
-            {url && (
-              <Button
-                variant="ghost"
-                size="iconSm"
-                asChild
-                title={isApp ? "Play Store" : "Visit Website"}
+              {item.description}
+            </p>
+            {hasDistinctDescription && item.description.length > 90 && (
+              <button
+                onClick={() => setExpandedDesc(!expandedDesc)}
+                className="text-[10px] text-emerald-600 dark:text-emerald-400 hover:underline font-medium"
               >
-                <a href={url} target="_blank" rel="noreferrer">
-                  <ExternalLink className="w-3.5 h-3.5" />
-                </a>
-              </Button>
+                {expandedDesc ? "Show less" : "Read more"}
+              </button>
             )}
+          </div>
+        )}
 
+        {/* Highlights */}
+        {item.highlights && item.highlights.length > 0 && (
+          <div className="pt-2 border-t border-border/60 space-y-1">
+            <span className="text-[10px] uppercase font-mono tracking-wider text-muted-foreground">
+              Highlights
+            </span>
+            <ul className="space-y-1">
+              {item.highlights.slice(0, 2).map((h, i) => (
+                <li key={i} className="text-[11px] text-muted-foreground flex items-start gap-1.5">
+                  <CheckCircle2 className="w-3 h-3 text-emerald-600 dark:text-emerald-400 shrink-0 mt-0.5" />
+                  <span className="line-clamp-1">{h}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        {/* Tech Stack Chips */}
+        {item.stack && item.stack.length > 0 && (
+          <div className="flex flex-wrap gap-1 pt-1">
+            {item.stack.map((st) => (
+              <span
+                key={st}
+                className="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-mono bg-muted text-muted-foreground border border-border"
+              >
+                {st}
+              </span>
+            ))}
+          </div>
+        )}
+      </CardContent>
+
+      {/* Card Footer Actions */}
+      <div className="px-4 py-2.5 bg-muted/30 border-t border-border flex items-center justify-between text-xs">
+        {/* Reorder arrows */}
+        <div className="flex items-center gap-0.5">
+          <Button
+            variant="ghost"
+            size="iconSm"
+            disabled={index === 0 || !isAuthed}
+            onClick={() => onMoveUp(index, type)}
+            title="Move item up"
+            className="h-6 w-6"
+          >
+            <ChevronUp className="w-3.5 h-3.5" />
+          </Button>
+          <Button
+            variant="ghost"
+            size="iconSm"
+            disabled={index === total - 1 || !isAuthed}
+            onClick={() => onMoveDown(index, type)}
+            title="Move item down"
+            className="h-6 w-6"
+          >
+            <ChevronDown className="w-3.5 h-3.5" />
+          </Button>
+        </div>
+
+        {/* Right action icons */}
+        <div className="flex items-center gap-1">
+          {url && (
             <Button
               variant="ghost"
               size="iconSm"
-              onClick={() => onDuplicate(item, type)}
-              title="Duplicate"
+              asChild
+              title={isApp ? "Open in Google Play Store" : "Open Website"}
+              className="h-7 w-7"
             >
-              <Copy className="w-3.5 h-3.5" />
+              <a href={url} target="_blank" rel="noreferrer">
+                <ExternalLink className="w-3.5 h-3.5" />
+              </a>
             </Button>
+          )}
 
-            <Button
-              variant="secondary"
-              size="sm"
-              onClick={() => onEdit(item, type)}
-              className="h-7 px-2.5 text-[11px] gap-1"
-            >
-              <Edit2 className="w-3 h-3 text-brand" />
-              <span>Edit</span>
-            </Button>
+          <Button
+            variant="ghost"
+            size="iconSm"
+            onClick={() => onDuplicate(item, type)}
+            title="Duplicate item"
+            className="h-7 w-7"
+          >
+            <Copy className="w-3.5 h-3.5" />
+          </Button>
 
-            <Button
-              variant="destructive"
-              size="iconSm"
-              onClick={() => onDelete(item, type)}
-              title="Delete"
-            >
-              <Trash2 className="w-3.5 h-3.5" />
-            </Button>
-          </div>
+          <Button
+            variant="ghost"
+            size="iconSm"
+            onClick={() => onEdit(item, type)}
+            title="Edit item"
+            className="h-7 w-7"
+          >
+            <Edit2 className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" />
+          </Button>
+
+          <Button
+            variant="ghost"
+            size="iconSm"
+            onClick={() => onDelete(item, type)}
+            title="Delete item"
+            className="h-7 w-7 hover:text-rose-500"
+          >
+            <Trash2 className="w-3.5 h-3.5" />
+          </Button>
         </div>
-      </CardContent>
+      </div>
     </Card>
   );
 }

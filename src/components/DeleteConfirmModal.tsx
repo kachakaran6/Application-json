@@ -43,7 +43,7 @@ export function DeleteConfirmModal({
 
   return (
     <Dialog open={isOpen} onOpenChange={(open) => !open && onClose()}>
-      <DialogContent className="max-w-md bg-[#1C1C1C] border-border p-5 rounded-lg">
+      <DialogContent className="max-w-md bg-card border-border p-5 rounded-lg">
         <DialogHeader className="text-left space-y-1">
           <div className="flex items-center gap-2.5">
             <div className="w-8 h-8 rounded bg-destructive/15 border border-destructive/30 flex items-center justify-center text-rose-400 shrink-0">
@@ -60,7 +60,7 @@ export function DeleteConfirmModal({
           </div>
         </DialogHeader>
 
-        <div className="p-3 my-2 rounded bg-[#141414] border border-border space-y-1">
+        <div className="p-3 my-2 rounded bg-muted/50 border border-border space-y-1">
           <p className="text-xs text-foreground font-medium">{itemTitle}</p>
           <p className="text-[11px] text-muted-foreground font-mono truncate">{itemId}</p>
         </div>

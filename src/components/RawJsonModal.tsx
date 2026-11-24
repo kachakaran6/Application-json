@@ -83,18 +83,18 @@ export function RawJsonModal({
 
   return (
     <Dialog open={isOpen} onOpenChange={(open) => !open && onClose()}>
-      <DialogContent className="max-w-4xl h-[85vh] flex flex-col p-0 overflow-hidden bg-[#1C1C1C] border-border rounded-lg">
+      <DialogContent className="max-w-4xl h-[85vh] flex flex-col p-0 overflow-hidden bg-card border-border rounded-lg">
         {/* Supabase style Editor Header */}
-        <DialogHeader className="p-4 border-b border-border bg-[#171717] shrink-0 text-left">
+        <DialogHeader className="p-4 border-b border-border bg-muted/40 shrink-0 text-left">
           <div className="flex items-center justify-between pr-6">
             <div className="flex items-center gap-2.5">
-              <div className="w-8 h-8 rounded bg-[#141414] border border-border flex items-center justify-center text-brand">
+              <div className="w-8 h-8 rounded bg-muted border border-border flex items-center justify-center text-brand">
                 <Code className="w-4 h-4" />
               </div>
               <div>
                 <DialogTitle className="text-sm font-semibold text-foreground flex items-center gap-2">
                   app.json Studio Editor
-                  <Badge variant="secondary" className="font-mono text-[10px] bg-[#141414]">
+                  <Badge variant="secondary" className="font-mono text-[10px] bg-muted">
                     root/app.json
                   </Badge>
                 </DialogTitle>
@@ -125,17 +125,17 @@ export function RawJsonModal({
         )}
 
         {/* Editor Area */}
-        <div className="flex-1 p-3 bg-[#121212] overflow-hidden font-mono text-xs">
+        <div className="flex-1 p-3 bg-muted/30 overflow-hidden font-mono text-xs">
           <textarea
             value={jsonText}
             onChange={(e) => handleTextChange(e.target.value)}
             spellCheck={false}
-            className="w-full h-full p-2 bg-transparent text-[#3ECF8E] placeholder:text-muted-foreground resize-none focus:outline-none overflow-y-auto leading-relaxed border-0"
+            className="w-full h-full p-2 bg-transparent text-emerald-600 dark:text-emerald-400 placeholder:text-muted-foreground resize-none focus:outline-none overflow-y-auto leading-relaxed border-0"
           />
         </div>
 
         {/* Footer */}
-        <DialogFooter className="p-3 border-t border-border bg-[#171717] shrink-0 flex items-center justify-between">
+        <DialogFooter className="p-3 border-t border-border bg-muted/40 shrink-0 flex items-center justify-between">
           <div>
             {parseError ? (
               <span className="text-rose-400 text-xs font-mono">Invalid JSON</span>

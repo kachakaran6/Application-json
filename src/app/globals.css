@@ -3,36 +3,68 @@
 @tailwind utilities;
 
 @layer base {
+  /* LIGHT MODE (Clean, gallery-grade neutral palette, high contrast, zero glare) */
   :root {
-    --background: 0 0% 9%; /* #171717 */
-    --foreground: 0 0% 93%; /* #EDEDED */
+    --background: 0 0% 100%; /* #FFFFFF */
+    --foreground: 240 10% 4%; /* #09090b - deep crisp charcoal */
 
-    --card: 0 0% 11%; /* #1C1C1C */
-    --card-foreground: 0 0% 93%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 4%;
 
-    --popover: 0 0% 11%;
-    --popover-foreground: 0 0% 93%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 4%;
 
-    --primary: 158 64% 52%; /* #3ECF8E - Iconic Supabase Emerald */
-    --primary-foreground: 164 85% 7%; /* Dark emerald text for high contrast */
+    --primary: 158 64% 38%; /* #059669 - Accessible deep emerald for light mode */
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 0 0% 15%; /* #262626 */
-    --secondary-foreground: 0 0% 93%;
+    --secondary: 240 5% 96%; /* #f4f4f5 */
+    --secondary-foreground: 240 6% 10%;
 
-    --muted: 0 0% 15%; /* #262626 */
-    --muted-foreground: 0 0% 63%; /* #A1A1AA */
+    --muted: 240 5% 96%; /* #f4f4f5 */
+    --muted-foreground: 240 4% 46%; /* #71717a */
 
-    --accent: 0 0% 16%; /* #292929 */
-    --accent-foreground: 0 0% 93%;
+    --accent: 240 5% 94%; /* #ececf0 */
+    --accent-foreground: 240 6% 10%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 0 0% 18%; /* #2E2E2E */
-    --input: 0 0% 18%;
-    --ring: 158 64% 52%;
+    --border: 240 6% 90%; /* #e4e4e7 */
+    --input: 240 6% 90%;
+    --ring: 158 64% 38%;
 
-    --radius: 0.5rem; /* Supabase clean 8px radius */
+    --radius: 0.5rem;
+  }
+
+  /* DARK MODE (Refined obsidian & slate, deliberate low-glare surface hierarchy) */
+  .dark {
+    --background: 240 10% 4%; /* #09090b */
+    --foreground: 0 0% 98%; /* #fafafa */
+
+    --card: 240 10% 7%; /* #111113 */
+    --card-foreground: 0 0% 98%;
+
+    --popover: 240 10% 7%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 158 64% 52%; /* #3ECF8E - Iconic emerald */
+    --primary-foreground: 164 85% 7%;
+
+    --secondary: 240 5% 12%; /* #18181b */
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 240 5% 12%; /* #18181b */
+    --muted-foreground: 240 5% 65%; /* #a1a1aa */
+
+    --accent: 240 5% 15%; /* #222226 */
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 6% 16%; /* #27272a */
+    --input: 240 6% 16%;
+    --ring: 158 64% 52%;
   }
 }
 
@@ -43,30 +75,21 @@
   body {
     @apply bg-background text-foreground antialiased;
     font-feature-settings: "rlig" 1, "calt" 1;
-    background-color: #121212;
   }
 }
 
-/* Supabase specific scrollbars */
+/* Subtle, unslop custom scrollbars */
 ::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
+  width: 5px;
+  height: 5px;
 }
 ::-webkit-scrollbar-track {
-  background: #171717;
+  background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-  background: #2e2e2e;
-  border-radius: 4px;
+  background: hsl(var(--border));
+  border-radius: 9999px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #3e3e3e;
-}
-
-/* Supabase grid pattern background */
-.supabase-grid-pattern {
-  background-size: 32px 32px;
-  background-image: 
-    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background: hsl(var(--muted-foreground) / 0.5);
 }

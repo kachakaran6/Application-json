@@ -93,11 +93,11 @@ export function ImagePickerModal({
 
   return (
     <Dialog open={isOpen} onOpenChange={(open) => !open && onClose()}>
-      <DialogContent className="max-w-2xl max-h-[85vh] flex flex-col p-0 overflow-hidden bg-[#1C1C1C] border-border rounded-lg">
+      <DialogContent className="max-w-2xl max-h-[85vh] flex flex-col p-0 overflow-hidden bg-card border-border rounded-lg">
         {/* Header */}
-        <DialogHeader className="p-4 border-b border-border bg-[#171717] shrink-0 text-left">
+        <DialogHeader className="p-4 border-b border-border bg-muted/40 shrink-0 text-left">
           <div className="flex items-center gap-2.5">
-            <div className="w-8 h-8 rounded bg-[#141414] border border-border flex items-center justify-center text-brand">
+            <div className="w-8 h-8 rounded bg-muted border border-border flex items-center justify-center text-brand">
               <ImageIcon className="w-4 h-4" />
             </div>
             <div>
@@ -123,7 +123,7 @@ export function ImagePickerModal({
             />
           </div>
 
-          <label className="inline-flex items-center justify-center gap-1.5 px-3 py-1.5 rounded-md bg-brand text-[#042f1a] font-semibold text-xs cursor-pointer hover:bg-brand-hover shadow-sm transition-colors shrink-0">
+          <label className="inline-flex items-center justify-center gap-1.5 px-3 py-1.5 rounded-md bg-brand text-black font-semibold text-xs cursor-pointer hover:bg-brand-hover shadow-sm transition-colors shrink-0">
             {uploading ? (
               <Loader2 className="w-3.5 h-3.5 animate-spin" />
             ) : (
@@ -166,10 +166,10 @@ export function ImagePickerModal({
                     className={`group relative flex flex-col items-center p-3 rounded-md border text-left transition-colors ${
                       isSelected
                         ? "border-brand bg-brand/10 shadow-sm"
-                        : "border-border hover:border-[#383838] bg-[#141414] hover:bg-[#191919]"
+                        : "border-border hover:border-border/80 bg-muted/40 hover:bg-muted/60"
                     }`}
                   >
-                    <div className="w-12 h-12 rounded bg-[#1C1C1C] border border-border flex items-center justify-center p-1.5 mb-2 group-hover:scale-105 transition-transform">
+                    <div className="w-12 h-12 rounded bg-card border border-border flex items-center justify-center p-1.5 mb-2 group-hover:scale-105 transition-transform">
                       {/* eslint-disable-next-line @next/next/no-img-element */}
                       <img
                         src={img.url}
@@ -183,7 +183,7 @@ export function ImagePickerModal({
                     </span>
 
                     {isSelected && (
-                      <div className="absolute top-2 right-2 w-4 h-4 rounded-full bg-brand text-[#042f1a] flex items-center justify-center">
+                      <div className="absolute top-2 right-2 w-4 h-4 rounded-full bg-brand text-black flex items-center justify-center">
                         <Check className="w-2.5 h-2.5" />
                       </div>
                     )}

@@ -226,12 +226,12 @@ export function ItemModal({
 
   return (
     <Dialog open={isOpen} onOpenChange={(open) => !open && onClose()}>
-      <DialogContent className="max-w-3xl max-h-[90vh] flex flex-col p-0 overflow-hidden bg-[#1C1C1C] border-border rounded-lg">
+      <DialogContent className="max-w-3xl max-h-[90vh] flex flex-col p-0 overflow-hidden bg-card border-border rounded-lg">
         {/* Header */}
-        <DialogHeader className="p-5 border-b border-border bg-[#171717] shrink-0 text-left">
+        <DialogHeader className="p-5 border-b border-border bg-muted/40 shrink-0 text-left">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2.5">
-              <div className="w-8 h-8 rounded bg-[#141414] border border-border flex items-center justify-center text-brand">
+              <div className="w-8 h-8 rounded bg-muted border border-border flex items-center justify-center text-brand">
                 {itemType === "app" ? (
                   <Smartphone className="w-4 h-4" />
                 ) : (
@@ -250,7 +250,7 @@ export function ItemModal({
             </div>
 
             {mode === "create" && (
-              <div className="flex items-center bg-[#141414] p-0.5 rounded border border-border mr-6">
+              <div className="flex items-center bg-muted/60 p-0.5 rounded border border-border mr-6">
                 <Button
                   type="button"
                   variant={itemType === "app" ? "default" : "ghost"}
@@ -335,7 +335,7 @@ export function ItemModal({
               <select
                 value={status}
                 onChange={(e) => setStatus(e.target.value)}
-                className="flex h-8 w-full rounded-md border border-border bg-[#141414] px-3 py-1 text-xs text-foreground focus:outline-none focus:ring-1 focus:ring-brand capitalize"
+                className="flex h-8 w-full rounded-md border border-border bg-muted/40 px-3 py-1 text-xs text-foreground focus:outline-none focus:ring-1 focus:ring-brand capitalize"
               >
                 {statusOptions.map((opt) => (
                   <option key={opt} value={opt}>
@@ -365,8 +365,8 @@ export function ItemModal({
           </div>
 
           {/* Icon Selector Row */}
-          <div className="p-3.5 rounded-md bg-[#141414] border border-border flex items-center gap-3.5">
-            <div className="w-12 h-12 rounded bg-[#1C1C1C] border border-border flex items-center justify-center p-1.5 shrink-0">
+          <div className="p-3.5 rounded-md bg-muted/40 border border-border flex items-center gap-3.5">
+            <div className="w-12 h-12 rounded bg-muted/60 border border-border flex items-center justify-center p-1.5 shrink-0">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={iconUrl}
@@ -473,7 +473,7 @@ export function ItemModal({
           </div>
 
           {/* Tech Stack Input */}
-          <div className="p-3 rounded-md bg-[#141414] border border-border space-y-2">
+          <div className="p-3 rounded-md bg-muted/40 border border-border space-y-2">
             <label className="block text-[11px] font-medium text-foreground">
               Technology Stack
             </label>
@@ -482,7 +482,7 @@ export function ItemModal({
                 <Badge
                   key={item}
                   variant="secondary"
-                  className="gap-1 font-mono text-[10px] bg-[#1C1C1C] border-border"
+                  className="gap-1 font-mono text-[10px] bg-muted border-border"
                 >
                   {item}
                   <button
@@ -514,13 +514,13 @@ export function ItemModal({
           </div>
 
           {/* Highlights List */}
-          <div className="p-3 rounded-md bg-[#141414] border border-border space-y-2">
+          <div className="p-3 rounded-md bg-muted/40 border border-border space-y-2">
             <label className="block text-[11px] font-medium text-foreground">
               Architecture & Feature Highlights
             </label>
             <div className="space-y-1.5">
               {highlights.map((hl, idx) => (
-                <div key={idx} className="flex items-center gap-2 p-1.5 rounded bg-[#1C1C1C] border border-border text-[11px] text-muted-foreground">
+                <div key={idx} className="flex items-center gap-2 p-1.5 rounded bg-card border border-border text-[11px] text-muted-foreground">
                   <CheckCircle className="w-3 h-3 text-brand shrink-0" />
                   <span className="flex-1">{hl}</span>
                   <button
@@ -553,7 +553,7 @@ export function ItemModal({
         </form>
 
         {/* Footer */}
-        <DialogFooter className="p-4 border-t border-border bg-[#171717] shrink-0 flex items-center justify-between">
+        <DialogFooter className="p-4 border-t border-border bg-muted/40 shrink-0 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <StatusBadge status={status} />
           </div>

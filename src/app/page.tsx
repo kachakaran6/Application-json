@@ -29,6 +29,7 @@ import { RawJsonModal } from "@/components/RawJsonModal";
 import { BackupModal } from "@/components/BackupModal";
 import { LoginModal } from "@/components/LoginModal";
 import { ToastContainer, ToastMessage } from "@/components/Toast";
+import { PlayConsoleMonitor } from "@/components/PlayConsoleMonitor";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
@@ -40,7 +41,7 @@ export default function RegistryStudioPage() {
   const [isAuthed, setIsAuthed] = useState(false);
 
   // Filters & Views
-  const [activeTab, setActiveTab] = useState<"all" | "apps" | "websites" | "featured">("all");
+  const [activeTab, setActiveTab] = useState<"all" | "apps" | "websites" | "featured" | "playstore">("all");
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedStatus, setSelectedStatus] = useState<string>("all");
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
@@ -318,7 +319,7 @@ export default function RegistryStudioPage() {
 
   if (loading) {
     return (
-      <div className="flex flex-col items-center justify-center min-h-screen bg-[#121212] text-foreground">
+      <div className="flex flex-col items-center justify-center min-h-screen bg-background text-foreground">
         <div className="w-8 h-8 border-2 border-border border-t-brand rounded-full animate-spin mb-3" />
         <h2 className="text-sm font-medium text-foreground">Connecting to Registry...</h2>
         <p className="text-xs text-muted-foreground mt-0.5">Reading app.json schema</p>
@@ -327,7 +328,7 @@ export default function RegistryStudioPage() {
   }
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#121212] text-foreground">
+    <div className="min-h-screen flex flex-col bg-background text-foreground">
       {/* Supabase Top Navigation */}
       <Navbar
         version={registry?.version || "2.0.0"}
@@ -395,27 +396,29 @@ export default function RegistryStudioPage() {
         </div>
 
         {/* Metrics Grid */}
-        <StatCards
-          registry={registry}
-          onRefresh={() => fetchRegistry(true)}
-          refreshing={refreshing}
-        />
+        {activeTab !== "playstore" && (
+          <StatCards
+            registry={registry}
+            onRefresh={() => fetchRegistry(true)}
+            refreshing={refreshing}
+          />
+        )}
 
         {/* Supabase-style Table / Controls Toolbar */}
-        <div className="rounded-lg border border-border bg-[#1C1C1C] p-3 shadow-sm space-y-3">
+        <div className="rounded-lg border border-border bg-card p-3 shadow-sm space-y-3">
           <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-3">
             {/* Supabase Pill Tabs */}
-            <div className="flex items-center gap-1 bg-[#141414] p-1 rounded-md border border-border shrink-0 overflow-x-auto">
+            <div className="flex items-center gap-1 bg-muted/60 p-1 rounded-md border border-border shrink-0 overflow-x-auto">
               <button
                 onClick={() => setActiveTab("all")}
                 className={`flex items-center gap-1.5 px-3 py-1 rounded text-xs font-medium transition-colors ${
                   activeTab === "all"
-                    ? "bg-[#1C1C1C] text-foreground border border-border shadow-sm"
+                    ? "bg-card text-foreground border border-border shadow-sm"
                     : "text-muted-foreground hover:text-foreground"
                 }`}
               >
                 All Items
-                <span className="text-[10px] font-mono px-1 rounded bg-[#171717] text-muted-foreground">
+                <span className="text-[10px] font-mono px-1 rounded bg-muted text-muted-foreground">
                   {(registry?.apps.length || 0) + (registry?.websites.length || 0)}
                 </span>
               </button>
@@ -424,13 +427,13 @@ export default function RegistryStudioPage() {
                 onClick={() => setActiveTab("apps")}
                 className={`flex items-center gap-1.5 px-3 py-1 rounded text-xs font-medium transition-colors ${
                   activeTab === "apps"
-                    ? "bg-[#1C1C1C] text-foreground border border-border shadow-sm"
+                    ? "bg-card text-foreground border border-border shadow-sm"
                     : "text-muted-foreground hover:text-foreground"
                 }`}
               >
                 <Smartphone className="w-3.5 h-3.5 text-brand" />
                 Mobile Apps
-                <span className="text-[10px] font-mono px-1 rounded bg-[#171717] text-muted-foreground">
+                <span className="text-[10px] font-mono px-1 rounded bg-muted text-muted-foreground">
                   {registry?.apps.length || 0}
                 </span>
               </button>
@@ -439,13 +442,13 @@ export default function RegistryStudioPage() {
                 onClick={() => setActiveTab("websites")}
                 className={`flex items-center gap-1.5 px-3 py-1 rounded text-xs font-medium transition-colors ${
                   activeTab === "websites"
-                    ? "bg-[#1C1C1C] text-foreground border border-border shadow-sm"
+                    ? "bg-card text-foreground border border-border shadow-sm"
                     : "text-muted-foreground hover:text-foreground"
                 }`}
               >
                 <Globe className="w-3.5 h-3.5 text-blue-400" />
                 Web Platforms
-                <span className="text-[10px] font-mono px-1 rounded bg-[#171717] text-muted-foreground">
+                <span className="text-[10px] font-mono px-1 rounded bg-muted text-muted-foreground">
                   {registry?.websites.length || 0}
                 </span>
               </button>
@@ -454,121 +457,143 @@ export default function RegistryStudioPage() {
                 onClick={() => setActiveTab("featured")}
                 className={`flex items-center gap-1.5 px-3 py-1 rounded text-xs font-medium transition-colors ${
                   activeTab === "featured"
-                    ? "bg-[#1C1C1C] text-foreground border border-border shadow-sm"
+                    ? "bg-card text-foreground border border-border shadow-sm"
                     : "text-muted-foreground hover:text-foreground"
                 }`}
               >
                 <Sparkles className="w-3.5 h-3.5 text-amber-400" />
                 Featured
               </button>
+
+              <button
+                onClick={() => setActiveTab("playstore")}
+                className={`flex items-center gap-1.5 px-3 py-1 rounded text-xs font-medium transition-colors ${
+                  activeTab === "playstore"
+                    ? "bg-card text-emerald-500 dark:text-emerald-400 border border-emerald-500/30 shadow-sm"
+                    : "text-muted-foreground hover:text-foreground"
+                }`}
+              >
+                <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 dark:bg-emerald-400 animate-pulse" />
+                Play Console
+                <span className="text-[10px] font-mono px-1 rounded bg-muted text-emerald-600 dark:text-emerald-400">
+                  18
+                </span>
+              </button>
             </div>
 
-            {/* Search Input */}
-            <div className="relative flex-1 max-w-sm">
-              <Search className="absolute left-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-muted-foreground" />
-              <Input
-                placeholder="Filter by name, package, category, tech..."
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                className="pl-8 h-8 text-xs bg-[#141414]"
-              />
-              {searchQuery && (
+            {/* Search Input & View Mode (when on catalog tabs) */}
+            {activeTab !== "playstore" && (
+              <>
+                <div className="relative flex-1 max-w-sm">
+                  <Search className="absolute left-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-muted-foreground" />
+                  <Input
+                    placeholder="Filter by name, package, category, tech..."
+                    value={searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)}
+                    className="pl-8 h-8 text-xs bg-muted/40"
+                  />
+                  {searchQuery && (
+                    <button
+                      onClick={() => setSearchQuery("")}
+                      className="absolute right-2.5 top-1/2 -translate-y-1/2 text-[10px] text-muted-foreground hover:text-foreground font-mono"
+                    >
+                      ESC
+                    </button>
+                  )}
+                </div>
+
+                <div className="flex items-center gap-1 bg-muted/60 p-0.5 rounded border border-border shrink-0 self-end lg:self-auto">
+                  <Button
+                    variant={viewMode === "grid" ? "secondary" : "ghost"}
+                    size="iconSm"
+                    onClick={() => setViewMode("grid")}
+                    title="Grid Cards View"
+                    className="h-7 w-7"
+                  >
+                    <LayoutGrid className="w-3.5 h-3.5" />
+                  </Button>
+                  <Button
+                    variant={viewMode === "table" ? "secondary" : "ghost"}
+                    size="iconSm"
+                    onClick={() => setViewMode("table")}
+                    title="Dense Table View"
+                    className="h-7 w-7"
+                  >
+                    <List className="w-3.5 h-3.5" />
+                  </Button>
+                </div>
+              </>
+            )}
+          </div>
+
+          {/* Sub-toolbar Filters (when on catalog tabs) */}
+          {activeTab !== "playstore" && (
+            <div className="flex flex-wrap items-center gap-2 pt-2.5 border-t border-border/60 text-xs">
+              <span className="text-muted-foreground flex items-center gap-1 text-[11px]">
+                <SlidersHorizontal className="w-3 h-3" /> Filter:
+              </span>
+
+              {/* Status */}
+              <select
+                value={selectedStatus}
+                onChange={(e) => setSelectedStatus(e.target.value)}
+                className="h-7 px-2 bg-muted/40 border border-border rounded text-muted-foreground focus:outline-none focus:ring-1 focus:ring-brand text-[11px] capitalize"
+              >
+                <option value="all">All Statuses</option>
+                {registry?.statusOptions.map((st) => (
+                  <option key={st} value={st}>
+                    {st.replace("_", " ")}
+                  </option>
+                ))}
+              </select>
+
+              {/* Category */}
+              <select
+                value={selectedCategory}
+                onChange={(e) => setSelectedCategory(e.target.value)}
+                className="h-7 px-2 bg-muted/40 border border-border rounded text-muted-foreground focus:outline-none focus:ring-1 focus:ring-brand text-[11px] max-w-[200px] truncate"
+              >
+                <option value="all">All Categories</option>
+                {existingCategories.map((c) => (
+                  <option key={c} value={c}>
+                    {c}
+                  </option>
+                ))}
+              </select>
+
+              {/* Sort */}
+              <select
+                value={sortBy}
+                onChange={(e) => setSortBy(e.target.value as any)}
+                className="h-7 px-2 bg-muted/40 border border-border rounded text-muted-foreground focus:outline-none focus:ring-1 focus:ring-brand text-[11px]"
+              >
+                <option value="default">Default Registry Order</option>
+                <option value="name">Name (A-Z)</option>
+                <option value="year">Launch Year (Newest)</option>
+              </select>
+
+              {(selectedStatus !== "all" || selectedCategory !== "all" || sortBy !== "default") && (
                 <button
-                  onClick={() => setSearchQuery("")}
-                  className="absolute right-2.5 top-1/2 -translate-y-1/2 text-[10px] text-muted-foreground hover:text-foreground font-mono"
+                  onClick={() => {
+                    setSelectedStatus("all");
+                    setSelectedCategory("all");
+                    setSortBy("default");
+                  }}
+                  className="text-[11px] text-brand hover:underline ml-auto"
                 >
-                  ESC
+                  Reset filters
                 </button>
               )}
             </div>
-
-            {/* View Mode Switcher */}
-            <div className="flex items-center gap-1 bg-[#141414] p-0.5 rounded border border-border shrink-0 self-end lg:self-auto">
-              <Button
-                variant={viewMode === "grid" ? "secondary" : "ghost"}
-                size="iconSm"
-                onClick={() => setViewMode("grid")}
-                title="Grid Cards View"
-                className="h-7 w-7"
-              >
-                <LayoutGrid className="w-3.5 h-3.5" />
-              </Button>
-              <Button
-                variant={viewMode === "table" ? "secondary" : "ghost"}
-                size="iconSm"
-                onClick={() => setViewMode("table")}
-                title="Dense Table View"
-                className="h-7 w-7"
-              >
-                <List className="w-3.5 h-3.5" />
-              </Button>
-            </div>
-          </div>
-
-          {/* Sub-toolbar Filters */}
-          <div className="flex flex-wrap items-center gap-2 pt-2.5 border-t border-border/60 text-xs">
-            <span className="text-muted-foreground flex items-center gap-1 text-[11px]">
-              <SlidersHorizontal className="w-3 h-3" /> Filter:
-            </span>
-
-            {/* Status */}
-            <select
-              value={selectedStatus}
-              onChange={(e) => setSelectedStatus(e.target.value)}
-              className="h-7 px-2 bg-[#141414] border border-border rounded text-muted-foreground focus:outline-none focus:ring-1 focus:ring-brand text-[11px] capitalize"
-            >
-              <option value="all">All Statuses</option>
-              {registry?.statusOptions.map((st) => (
-                <option key={st} value={st}>
-                  {st.replace("_", " ")}
-                </option>
-              ))}
-            </select>
-
-            {/* Category */}
-            <select
-              value={selectedCategory}
-              onChange={(e) => setSelectedCategory(e.target.value)}
-              className="h-7 px-2 bg-[#141414] border border-border rounded text-muted-foreground focus:outline-none focus:ring-1 focus:ring-brand text-[11px] max-w-[200px] truncate"
-            >
-              <option value="all">All Categories</option>
-              {existingCategories.map((c) => (
-                <option key={c} value={c}>
-                  {c}
-                </option>
-              ))}
-            </select>
-
-            {/* Sort */}
-            <select
-              value={sortBy}
-              onChange={(e) => setSortBy(e.target.value as any)}
-              className="h-7 px-2 bg-[#141414] border border-border rounded text-muted-foreground focus:outline-none focus:ring-1 focus:ring-brand text-[11px]"
-            >
-              <option value="default">Default Registry Order</option>
-              <option value="name">Name (A-Z)</option>
-              <option value="year">Launch Year (Newest)</option>
-            </select>
-
-            {(selectedStatus !== "all" || selectedCategory !== "all" || sortBy !== "default") && (
-              <button
-                onClick={() => {
-                  setSelectedStatus("all");
-                  setSelectedCategory("all");
-                  setSortBy("default");
-                }}
-                className="text-[11px] text-brand hover:underline ml-auto"
-              >
-                Reset filters
-              </button>
-            )}
-          </div>
+          )}
         </div>
 
-        {/* Catalog Body */}
-        {combinedItems.length === 0 ? (
-          <div className="flex flex-col items-center justify-center p-14 rounded-lg bg-[#1C1C1C] border border-border text-center">
-            <div className="w-10 h-10 rounded-md bg-[#141414] border border-border flex items-center justify-center text-brand mb-3">
+        {/* Content Body */}
+        {activeTab === "playstore" ? (
+          <PlayConsoleMonitor onToast={addToast} />
+        ) : combinedItems.length === 0 ? (
+          <div className="flex flex-col items-center justify-center p-14 rounded-lg bg-card border border-border text-center">
+            <div className="w-10 h-10 rounded-md bg-muted border border-border flex items-center justify-center text-brand mb-3">
               <FolderGit2 className="w-5 h-5" />
             </div>
             <h3 className="text-sm font-semibold text-foreground">No matching entries found</h3>
@@ -639,7 +664,7 @@ export default function RegistryStudioPage() {
       </main>
 
       {/* Supabase-style Footer */}
-      <footer className="border-t border-border bg-[#141414] py-4 text-center text-[11px] text-muted-foreground">
+      <footer className="border-t border-border bg-card py-4 text-center text-[11px] text-muted-foreground">
         <div className="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-2">
           <span>Samyukt Unified Ecosystem Registry</span>
           <span className="font-mono text-[10px]">

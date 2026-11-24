@@ -24,10 +24,10 @@ interface TableViewProps {
 
 export function TableView({ items, onEdit, onDuplicate, onDelete }: TableViewProps) {
   return (
-    <div className="rounded-lg border border-border bg-[#1C1C1C] overflow-hidden shadow-sm">
+    <div className="rounded-lg border border-border bg-card overflow-hidden shadow-xs transition-colors">
       <Table>
         <TableHeader>
-          <TableRow className="border-b border-border bg-[#171717] hover:bg-[#171717]">
+          <TableRow className="border-b border-border bg-muted/40 hover:bg-muted/40">
             <TableHead className="w-[280px]">Product & Identifier</TableHead>
             <TableHead className="w-[110px]">Type</TableHead>
             <TableHead className="w-[130px]">Status</TableHead>
@@ -47,16 +47,16 @@ export function TableView({ items, onEdit, onDuplicate, onDelete }: TableViewPro
             const desc = item.description || item.tagline || "";
 
             return (
-              <TableRow key={item.id} className="hover:bg-[#202020] transition-colors border-border">
+              <TableRow key={item.id} className="hover:bg-muted/40 transition-colors border-border">
                 {/* Product Name & Icon */}
                 <TableCell>
                   <div className="flex items-center gap-2.5">
-                    <div className="w-8 h-8 rounded bg-[#141414] border border-border p-1 shrink-0 flex items-center justify-center">
+                    <div className="w-8 h-8 rounded-md bg-muted border border-border p-1 shrink-0 flex items-center justify-center">
                       {/* eslint-disable-next-line @next/next/no-img-element */}
                       <img
                         src={item.iconUrl || "/images/samyukt.png"}
                         alt={title}
-                        className="w-full h-full object-contain rounded-sm"
+                        className="w-full h-full object-contain rounded-xs"
                         onError={(e) => {
                           (e.target as HTMLImageElement).src = "/images/samyukt.png";
                         }}
@@ -65,7 +65,7 @@ export function TableView({ items, onEdit, onDuplicate, onDelete }: TableViewPro
                     <div className="min-w-0">
                       <div className="flex items-center gap-1.5 font-medium text-xs text-foreground">
                         <span className="truncate">{title}</span>
-                        {item.featured && <Sparkles className="w-3 h-3 text-amber-400 shrink-0" />}
+                        {item.featured && <Sparkles className="w-3 h-3 text-amber-500 shrink-0" />}
                       </div>
                       <div className="font-mono text-[10px] text-muted-foreground truncate max-w-[180px]">
                         {subtitle}
@@ -76,11 +76,11 @@ export function TableView({ items, onEdit, onDuplicate, onDelete }: TableViewPro
 
                 {/* Type */}
                 <TableCell>
-                  <Badge variant="secondary" className="gap-1 font-normal text-[10px] bg-[#141414]">
+                  <Badge variant="secondary" className="gap-1 font-normal text-[10px] bg-muted text-muted-foreground border-border">
                     {isApp ? (
-                      <Smartphone className="w-2.5 h-2.5 text-brand" />
+                      <Smartphone className="w-2.5 h-2.5 text-emerald-600 dark:text-emerald-400" />
                     ) : (
-                      <Globe className="w-2.5 h-2.5 text-blue-400" />
+                      <Globe className="w-2.5 h-2.5 text-blue-500 dark:text-blue-400" />
                     )}
                     {isApp ? "Mobile App" : "Web Platform"}
                   </Badge>
@@ -109,7 +109,7 @@ export function TableView({ items, onEdit, onDuplicate, onDelete }: TableViewPro
                     {item.stack?.slice(0, 3).map((st) => (
                       <span
                         key={st}
-                        className="px-1.5 py-0.5 rounded text-[10px] bg-[#141414] border border-border text-muted-foreground font-mono"
+                        className="px-1.5 py-0.5 rounded text-[10px] bg-muted border border-border text-muted-foreground font-mono"
                       >
                         {st}
                       </span>
@@ -156,14 +156,14 @@ export function TableView({ items, onEdit, onDuplicate, onDelete }: TableViewPro
                       onClick={() => onEdit(item, type)}
                       title="Edit"
                     >
-                      <Edit2 className="w-3.5 h-3.5 text-brand" />
+                      <Edit2 className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" />
                     </Button>
                     <Button
                       variant="ghost"
                       size="iconSm"
                       onClick={() => onDelete(item, type)}
                       title="Delete"
-                      className="hover:text-rose-400"
+                      className="hover:text-rose-500"
                     >
                       <Trash2 className="w-3.5 h-3.5" />
                     </Button>

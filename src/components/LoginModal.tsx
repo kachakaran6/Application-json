@@ -52,7 +52,7 @@ export function LoginModal({ isOpen, onClose, onLoginSuccess }: LoginModalProps)
 
   return (
     <Dialog open={isOpen} onOpenChange={(open) => !open && onClose()}>
-      <DialogContent className="max-w-md bg-[#1C1C1C] border-border p-5 rounded-lg">
+      <DialogContent className="max-w-md bg-card border-border p-5 rounded-lg">
         <DialogHeader className="text-left space-y-1">
           <div className="flex items-center gap-2.5">
             <div className="w-8 h-8 rounded bg-brand/10 border border-brand/30 flex items-center justify-center text-brand">

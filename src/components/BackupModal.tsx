@@ -95,12 +95,12 @@ export function BackupModal({
 
   return (
     <Dialog open={isOpen} onOpenChange={(open) => !open && onClose()}>
-      <DialogContent className="max-w-2xl max-h-[80vh] flex flex-col p-0 overflow-hidden bg-[#1C1C1C] border-border rounded-lg">
+      <DialogContent className="max-w-2xl max-h-[80vh] flex flex-col p-0 overflow-hidden bg-card border-border rounded-lg">
         {/* Header */}
-        <DialogHeader className="p-4 border-b border-border bg-[#171717] shrink-0 text-left">
+        <DialogHeader className="p-4 border-b border-border bg-muted/40 shrink-0 text-left">
           <div className="flex items-center justify-between pr-6">
             <div className="flex items-center gap-2.5">
-              <div className="w-8 h-8 rounded bg-[#141414] border border-border flex items-center justify-center text-brand">
+              <div className="w-8 h-8 rounded bg-muted border border-border flex items-center justify-center text-brand">
                 <History className="w-4 h-4" />
               </div>
               <div>
@@ -141,12 +141,12 @@ export function BackupModal({
             backups.map((b) => (
               <div
                 key={b.filename}
-                className="flex items-center justify-between p-2.5 rounded bg-[#141414] border border-border hover:border-[#383838] transition-colors"
+                className="flex items-center justify-between p-2.5 rounded bg-muted/40 border border-border hover:border-border/80 transition-colors"
               >
                 <div className="space-y-0.5">
                   <div className="flex items-center gap-2">
                     <span className="font-mono text-xs text-foreground font-medium">{b.filename}</span>
-                    <Badge variant="secondary" className="font-mono text-[9px] bg-[#1C1C1C]">
+                    <Badge variant="secondary" className="font-mono text-[9px] bg-muted">
                       {(b.size / 1024).toFixed(1)} KB
                     </Badge>
                   </div>

@@ -30,35 +30,35 @@ export function StatCards({ registry, onRefresh, refreshing }: StatCardsProps) {
       label: "Mobile Applications",
       value: totalApps,
       sub: "Android packages",
-      icon: <Smartphone className="w-4 h-4 text-brand" />,
-      highlight: "hover:border-brand/40",
+      icon: <Smartphone className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />,
+      highlight: "hover:border-emerald-500/40",
     },
     {
       label: "Web Platforms",
       value: totalWebsites,
       sub: "Live web apps",
-      icon: <Globe className="w-4 h-4 text-blue-400" />,
+      icon: <Globe className="w-4 h-4 text-blue-500 dark:text-blue-400" />,
       highlight: "hover:border-blue-500/40",
     },
     {
       label: "Production Active",
       value: productionCount,
       sub: "Publicly launched",
-      icon: <CheckCircle2 className="w-4 h-4 text-brand" />,
-      highlight: "hover:border-brand/40",
+      icon: <CheckCircle2 className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />,
+      highlight: "hover:border-emerald-500/40",
     },
     {
       label: "Testing / Pipeline",
       value: pipelineCount,
       sub: "In progress / preview",
-      icon: <Clock className="w-4 h-4 text-amber-400" />,
+      icon: <Clock className="w-4 h-4 text-amber-600 dark:text-amber-400" />,
       highlight: "hover:border-amber-500/40",
     },
     {
       label: "Featured Showcases",
       value: featuredCount,
-      sub: "Homepage spotlights",
-      icon: <Sparkles className="w-4 h-4 text-amber-400" />,
+      sub: "Spotlight entries",
+      icon: <Sparkles className="w-4 h-4 text-amber-600 dark:text-amber-400" />,
       highlight: "hover:border-amber-500/40",
     },
   ];
@@ -68,14 +68,14 @@ export function StatCards({ registry, onRefresh, refreshing }: StatCardsProps) {
       {stats.map((s, idx) => (
         <Card
           key={s.label}
-          className={`border-border bg-[#1C1C1C] transition-colors ${s.highlight} ${
+          className={`border-border bg-card transition-colors ${s.highlight} ${
             idx === 4 ? "col-span-2 sm:col-span-1" : ""
           }`}
         >
           <CardContent className="p-4">
             <div className="flex items-center justify-between">
               <span className="text-[11px] font-medium text-muted-foreground">{s.label}</span>
-              <div className="w-7 h-7 rounded bg-[#141414] border border-border flex items-center justify-center">
+              <div className="w-7 h-7 rounded-md bg-muted border border-border flex items-center justify-center">
                 {s.icon}
               </div>
             </div>
