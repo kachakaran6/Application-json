@@ -232,22 +232,51 @@ export async function GET(request: NextRequest) {
       });
     }
 
-    // Resolve key file
-    const keyPath = path.resolve(process.cwd(), "api-key.json");
-    if (!fs.existsSync(keyPath)) {
-      return NextResponse.json(
-        {
-          success: false,
-          error: "api-key.json not found in server root directory.",
-        },
-        { status: 500 }
-      );
-    }
+    // Resolve credentials via Env Var or file mount
+    let auth: any = null;
 
-    const auth = new google.auth.GoogleAuth({
-      keyFile: keyPath,
-      scopes: ["https://www.googleapis.com/auth/androidpublisher"],
-    });
+    if (process.env.GOOGLE_SERVICE_ACCOUNT_JSON || process.env.PLAY_CONSOLE_KEY_JSON) {
+      try {
+        const rawJson = process.env.GOOGLE_SERVICE_ACCOUNT_JSON || process.env.PLAY_CONSOLE_KEY_JSON || "";
+        const credentials = JSON.parse(rawJson);
+        auth = new google.auth.GoogleAuth({
+          credentials,
+          scopes: ["https://www.googleapis.com/auth/androidpublisher"],
+        });
+      } catch (err: any) {
+        return NextResponse.json(
+          {
+            success: false,
+            error: `Failed to parse GOOGLE_SERVICE_ACCOUNT_JSON environment variable: ${err.message}`,
+          },
+          { status: 500 }
+        );
+      }
+    } else {
+      const candidates = [
+        process.env.GOOGLE_APPLICATION_CREDENTIALS,
+        path.resolve(process.cwd(), "api-key.json"),
+        "/app/api-key.json",
+        path.resolve(process.cwd(), "..", "api-key.json"),
+      ].filter(Boolean) as string[];
+
+      const keyPath = candidates.find((p) => fs.existsSync(p));
+
+      if (!keyPath) {
+        return NextResponse.json(
+          {
+            success: false,
+            error: "api-key.json not found. Please provide GOOGLE_SERVICE_ACCOUNT_JSON environment variable or mount api-key.json to /app/api-key.json",
+          },
+          { status: 500 }
+        );
+      }
+
+      auth = new google.auth.GoogleAuth({
+        keyFile: keyPath,
+        scopes: ["https://www.googleapis.com/auth/androidpublisher"],
+      });
+    }
 
     const play = google.androidpublisher({
       version: "v3",
